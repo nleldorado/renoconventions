@@ -5,6 +5,24 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `react-burger-menu`,
+    `react-images`,
+    `slick-carousel`,
+    `react-slick`,
+    `react-parallax`,
+    `react-intersection-observer`,
+    `react-countup`,
+    `react-modal-video`,
+    `react-animated-slider`,
+    `@rehooks/window-scroll-position`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
