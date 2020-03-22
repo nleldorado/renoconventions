@@ -17,18 +17,18 @@ const Navigation = () => {
     // if (position.y <= changePosition && change) {
     //     setChange(false);
     //     }
-        let position = useWindowScrollPosition();
-        if (typeof window !== `undefined`) {
+        // let position = useWindowScrollPosition();
+        // if (typeof window !== `undefined`) {
             
           
-            if (position.y > changePosition && !change) {
-                setChange(true);
-              }
+        //     if (position.y > changePosition && !change) {
+        //         setChange(true);
+        //       }
             
-            if (position.y <= changePosition && change) {
-                setChange(false);
-                }
-            }
+        //     if (position.y <= changePosition && change) {
+        //         setChange(false);
+        //         }
+        //     }
   
     let style = {
             background: change ? "rgba(33, 33, 33, 0.9)" : "rgba(33, 33, 33, 0.5)",

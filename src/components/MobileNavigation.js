@@ -7,18 +7,15 @@ const MobileNavigation = () => {
     const [change, setChange] = useState(false);
     const changePosition = 100;
   
-    let position = useWindowScrollPosition();
-    if (typeof window !== `undefined`) {
-        
-      
-        if (position.y > changePosition && !change) {
-            setChange(true);
-          }
-        
-        if (position.y <= changePosition && change) {
-            setChange(false);
-            }
-        }
+    // let position = useWindowScrollPosition();
+  
+    // if (position.y > changePosition && !change) {
+    //     setChange(true);
+    //   }
+    
+    // if (position.y <= changePosition && change) {
+    //     setChange(false);
+    //     }
         
   
     let style = {
