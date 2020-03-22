@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 // import Carousel from "../components/Carousel"
 import Slider from "../components/Slider"
 import AboutResorts from "../components/AboutResorts"
@@ -10,8 +10,8 @@ import ConventionsHome from '../components/ConventionsHome'
 import GolfHome from '../components/GolfHome'
 import AttractionsHome from '../components/AttractionsHome'
 import RestaurantsHome from '../components/RestaurantsHome'
-import Image from "../components/Image"
-import SEO from "../components/Seo"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
 const content = [
   {
