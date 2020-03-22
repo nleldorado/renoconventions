@@ -12,7 +12,7 @@ import Header from "./header"
 import Footer from "./Footer"
 import "../sass/main.scss"
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <>
       <Header/>
