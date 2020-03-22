@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react"
 import useWindowScrollPosition from "@rehooks/window-scroll-position"
 import Icon from './Icon'
 import Logo from '../images/row-white.png'
+import { useScrollYPosition } from 'react-use-scroll-position';
 
 const Navigation = () => {
     const [change, setChange] = useState(false);
@@ -19,6 +20,14 @@ const Navigation = () => {
 //             setChange(false);
 //             }
 //     })
+const scrollY = useScrollYPosition()
+if (scrollY > changePosition && !change) {
+    setChange(true);
+  }
+
+if (scrollY <= changePosition && change) {
+    setChange(false);
+    }
   
     let style = {
             background: change ? "rgba(33, 33, 33, 0.9)" : "rgba(33, 33, 33, 0.5)",

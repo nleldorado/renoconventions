@@ -5,6 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `react-use-scroll-position`,
     `react-burger-menu`,
     `react-images`,
     `slick-carousel`,

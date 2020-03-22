@@ -33,6 +33,7 @@
     "react-modal-video": "^1.2.3",
     "react-parallax": "^3.0.3",
     "react-slick": "^0.25.2",
+    "react-use-scroll-position": "^2.0.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
