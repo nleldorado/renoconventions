@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import useWindowScrollPosition from "@rehooks/window-scroll-position"
 import { stack as Menu } from 'react-burger-menu'
 
@@ -7,17 +7,18 @@ const MobileNavigation = () => {
     const [change, setChange] = useState(false);
     const changePosition = 100;
   
-    // let position = useWindowScrollPosition();
-  
-    // if (position.y > changePosition && !change) {
-    //     setChange(true);
-    //   }
+    let position = useWindowScrollPosition();
+    useEffect(() => {
+    if (position.y > changePosition && !change) {
+        setChange(true);
+      }
     
-    // if (position.y <= changePosition && change) {
-    //     setChange(false);
-    //     }
+    if (position.y <= changePosition && change) {
+        setChange(false);
+        }
         
-  
+    })
+
     let style = {
             background: change ? "rgba(33, 33, 33, 0.9)" : "transparent",
             transition: "300ms ease"
