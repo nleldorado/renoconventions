@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-import ModalVideo from 'react-modal-video'
 import Resort from './Resorts'
 import CountIntersectionObserver from './CountIntersectionObserver'
-import Play from '../images/play-circle-solid.svg'
 import Video from './Video'
 
 const Resorts = () => {

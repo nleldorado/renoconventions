@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
 import React, {useState} from "react"
 import useWindowScrollPosition from "@rehooks/window-scroll-position"
-import '../sass/main.scss'
-// import Image from './Image'
 import Icon from './Icon'
 import Logo from '../images/row-white.png'
 
@@ -22,10 +20,6 @@ const Navigation = () => {
         
   
     let style = {
-            // background: change ? "#232526" : "transparent",
-            // background: change ? "-webkit-linear-gradient(to right, #7700FF, #4400FF)" : "transparent",
-            // background: change ? "#f05123" : "linear-gradient(to right top, #f84426, #fa5223be, #fc5e1fcb, #fe6b1c9c, #ff761a9d)",
-
             background: change ? "rgba(33, 33, 33, 0.9)" : "rgba(33, 33, 33, 0.5)",
             padding: change ? "0 16px" : "20px 16px",
             height: change ? "60px" : "100px",

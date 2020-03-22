@@ -1,6 +1,4 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
-import { Link } from "gatsby"
 import RestaurantImage from '../images/restaurants.jpg'
 import Slick from '../components/Slick'
 import Parallaxx from './Parallaxx'

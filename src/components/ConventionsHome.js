@@ -1,6 +1,4 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
-import { Link } from "gatsby"
 import Parallaxx from './Parallaxx'
 
 const Conventions = () => {

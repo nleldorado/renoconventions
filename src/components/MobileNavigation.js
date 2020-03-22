@@ -19,10 +19,6 @@ const MobileNavigation = () => {
         
   
     let style = {
-            // background: change ? "#232526" : "transparent",
-            // background: change ? "-webkit-linear-gradient(to right, #7700FF, #4400FF)" : "transparent",
-            // background: change ? "#f05123" : "linear-gradient(to right top, #f84426, #fa5223be, #fc5e1fcb, #fe6b1c9c, #ff761a9d)",
-
             background: change ? "rgba(33, 33, 33, 0.9)" : "transparent",
             transition: "300ms ease"
         };
