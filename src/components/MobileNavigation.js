@@ -6,9 +6,12 @@ import { stack as Menu } from 'react-burger-menu'
 const MobileNavigation = () => {
     const [change, setChange] = useState(false);
     const changePosition = 100;
-  
-    let position = useWindowScrollPosition();
-    useEffect(() => {
+    let options = {
+        throttle: 100,
+      }
+
+    let position = useWindowScrollPosition(options);
+
     if (position.y > changePosition && !change) {
         setChange(true);
       }
@@ -16,8 +19,6 @@ const MobileNavigation = () => {
     if (position.y <= changePosition && change) {
         setChange(false);
         }
-        
-    })
 
     let style = {
             background: change ? "rgba(33, 33, 33, 0.9)" : "transparent",
