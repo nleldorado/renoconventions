@@ -2,8 +2,9 @@ import { Link } from "gatsby"
 import React, {useState} from "react"
 import useWindowScrollPosition from "@rehooks/window-scroll-position"
 import '../sass/main.scss'
-import Image from './Image'
+// import Image from './Image'
 import Icon from './Icon'
+import Logo from '../images/row-white.png'
 
 const Navigation = () => {
     const [change, setChange] = useState(false);
@@ -46,7 +47,7 @@ const Navigation = () => {
                 <div className="container">
                     <div className="logo" style={logo}>
                         <Link to="/">
-                            <Image/>
+                            <img src={Logo} alt="logo" />
                         </Link>
                     </div>
                     <div className="nav-links">
