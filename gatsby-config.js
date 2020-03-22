@@ -15,7 +15,6 @@ module.exports = {
     `react-countup`,
     `react-modal-video`,
     `react-animated-slider`,
-    `@rehooks/window-scroll-position`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
