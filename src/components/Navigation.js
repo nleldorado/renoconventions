@@ -1,32 +1,20 @@
 import { Link } from "gatsby"
 import React, {useState, useEffect} from "react"
-import useWindowScrollPosition from "@rehooks/window-scroll-position"
 import Icon from './Icon'
 import { useScrollYPosition } from 'react-use-scroll-position';
-import Image from './Image'
+import Image from './image'
 
 const Navigation = () => {
     const [change, setChange] = useState(false);
     const changePosition = 100;
-//    let position = useWindowScrollPosition();
-//     useEffect(() => {
-        
-    
-//         if (position.y > changePosition && !change) {
-//             setChange(true);
-//         }
-        
-//         if (position.y <= changePosition && change) {
-//             setChange(false);
-//             }
-//     })
-const scrollY = useScrollYPosition()
-if (scrollY > changePosition && !change) {
-    setChange(true);
-  }
 
-if (scrollY <= changePosition && change) {
-    setChange(false);
+    const scrollY = useScrollYPosition()
+    
+    if (scrollY > changePosition && !change) {
+        setChange(true);
+    }
+    if (scrollY <= changePosition && change) {
+        setChange(false);
     }
   
     let style = {
