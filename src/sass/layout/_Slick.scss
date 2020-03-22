@@ -1,0 +1,39 @@
+.slick {
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        
+        
+        .slick-prev, .slick-next {
+            top: 45px;
+            color: white;
+        }
+        .slick-prev:before, .slick-next:before {
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            
+        }
+        img {
+            margin: auto;
+            margin-top: 0px !important;
+            z-index: 0;
+        }
+        div {
+            outline: none !important;
+           
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .slick {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #eeeeee, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #fbfbfb, #fbfbfb, #fbfbfb, #f8f8f8, #f4f4f4, #f1f1f1, #eeeeee);
+    // color: #fff;
+    padding-bottom: 100px;
+    hr {
+        width: 90%;
+        margin: auto;
+    }
+    a {
+        text-decoration: none;
+        color: #212121;
+        
+    }
+    .footer {
+        display: flex;
+        max-width: 1440px;
+        margin: auto;
+        justify-content: space-around;
+        padding: 100px 0;
+        
+        .services, .pages, .subscribe {
+            h3::after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 40px;
+                background: #212121;
+                margin-top: 30px;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                }
+            }
+        }
+        .subscribe {
+            position: relative;
+            .subscribe_input {
+                width: 500px;
+                height: 50px;
+                border-radius: 10px;
+                border: 1px solid white;
+                box-shadow: 0 20px 50px -14px rgba(0,0,0,0.2);
+                background: white;
+                padding: 0 10px;
+                position: relative;
+                left: -4px;
+                outline: none;
+            }
+            h3 {
+                text-align: left;
+            }
+    
+            .icon {
+                position: absolute;
+                top: 81px;
+                right: 0px;
+                font-size: 33px;
+                color: white;
+                background: orangered;
+                padding: 12px 40px;
+                border-radius: 10px;
+                a {
+                    color: white;
+                }
+            }
+            ul {
+                display: flex;
+                margin: 0;
+                li {
+                    border-radius: 50%;
+                    border: 1px solid #2121215e;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 10px;
+                    .facebook {
+                        width: 12px;
+                        margin: 9px 13px;
+                    }
+                    .instagram {
+                        width: 20px;
+                        margin: 7px 9px;
+                    }
+                    .twitter {
+                        width: 20px;
+                        margin: 10px;
+                    }
+                }
+            }
+           
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding-bottom: 40px;
+        a {
+            font-size: 14px;
+        }
+        .footer {
+            padding: 50px 0 0px;
+            display: block;
+            width: 80%;
+            margin: auto;
+            .services, .pages, .subscribe {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 16px;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+                h3::after {
+                    display: none;
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        text-align: left;
+                    }
+                }
+            }
+            .subscribe {
+                h3 {
+                    text-align: center;
+                }
+                .subscribe_input {
+                    width: 300px;
+                    height: 40px;
+                }
+                .icon {
+                    position: absolute;
+                    top: 20px;
+                    right: 0px;
+                    font-size: 22px;
+                    color: white;
+                    background: orangered;
+                    padding: 12px 30px;
+                    border-radius: 10px;
+                    
+                }
+                ul {
+                    width: 60%;
+                    margin: auto;
+                    justify-content: space-around;
+                    
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,251 @@
+.about-resorts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px 50px;
+    max-width: 1440px;
+    margin: auto;
+    .col-6 {
+        width: 50%;
+        padding: 0 16px;
+        h2::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 40px;
+            background: #212121;
+            margin-top: 30px;
+        }
+    }
+    .display-flex {
+        padding: 40px 0 6px;
+        background: #212121;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px -14px rgba(0,0,0,0.5);
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5), rgba(33, 33, 33, 0.5)), url('https://www.visitrenotahoe.com/wp-content/uploads/2017/06/ELDORADOCasino.jpg') center center;
+            // background-repeat: no-repeat; 
+            // background-attachment: fixed;
+            // background-size: cover;
+            
+            button {
+            background: none;
+            border: none;
+            .play-button {
+                width: 300px;
+                opacity: 0.6;
+                transition: 0.2s ease;
+            }
+            .play-button:hover {
+                opacity: 1;
+            }
+        }
+        button:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.resorts {
+    height: 250px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .eldorado, .silver-legacy, .circus-circus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 33.3333%;
+        border-radius: 10px;
+        border-left: 0.5px solid rgb(255, 255, 255);
+        border-right: 0.5px solid rgb(255, 255, 255);
+        background-image: linear-gradient(to right top,#111111, #1c1c1c, #272727, #323232);
+        box-shadow: 0 20px 50px -14px rgba(0,0,0,0.5);
+        img {
+            width: 40%;
+        }
+
+        ul {
+            color: white;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            li {
+                border: 1px solid white;
+                margin: 0 5px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .container .title{
+        color: #1a1a1a;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .content {
+        position: relative;
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+        background: #212121;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 0.5px solid rgb(61, 61, 61);
+        border-right: 0.5px solid rgb(61, 61, 61);
+      }
+    
+      .content .content-overlay {
+        background: rgb(14, 14, 14);
+        position: absolute;
+        height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+       
+      }
+      
+      .content:hover .content-overlay{
+        opacity: 1;
+      }
+      
+      .content-image{
+        width: 220px;
+    
+        margin-top: 22px;
+        
+      }
+      
+      .content-details {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        
+      }
+      
+      .content:hover .content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+      }
+      
+      .content-details h3{
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+      }
+      
+      .content-details a{
+          text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        padding: 0 8px;
+        transition: 0.3s ease;
+      }
+      .content-details a:hover {
+          color: rgb(163, 163, 163);
+      }
+      
+      .fadeIn-bottom{
+        top: 80%;
+      }
+      
+     
+}
+
+@media screen and (max-width:768px) {
+    .about-resorts {
+        display: block;
+        .col-s-12 {
+            display: block;
+            width: 80%;
+            margin: auto;
+            h2 {
+                text-align: center;
+            }
+            h2::after {
+                width: 0;
+            }
+        }
+        .display-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            button {
+                padding-top: 35px;
+                .play-button {
+                    width: 200px;
+                    opacity: 0.6;
+                    transition: 0.2s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-resorts {
+        padding: 70px 16px;
+        .col-s-12 {
+            width: 100%;
+        }
+    }
+    .resorts {
+        display: block;
+        height: auto;
+       .content {
+           border-radius: 20px;
+           height: 250px;
+           width: 93%;
+           margin-bottom: 16px;
+           transition: 0.2s ease;
+           z-index: 1;
+       }
+       .content:hover {
+        box-shadow: 0 20px 50px -14px rgba(0,0,0,0.3);
+       }
+
+    }
+  }
+  
+//   @media screen and (min-width: 900px){
+//     .container{
+//       width: 33.33333%;
+//     }
+//   }
+  
+  
+  

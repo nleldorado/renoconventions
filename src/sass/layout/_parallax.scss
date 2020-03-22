@@ -1,0 +1,46 @@
+.parallax {
+    height: 80vh;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    
+    .parallax-title {
+        a {
+            text-decoration: none;
+            h1 {
+                font-size: 80px;
+                color: white;
+            }
+            h1::after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 30%;
+                background: #ffffff;
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+                
+    }
+            
+}
+
+@media (max-width: 600px) {
+    .react-parallax {
+        img {
+            max-width: none !important;
+            left: 0 !important;
+        }
+    }
+    .parallax {
+        height: 60vh;
+        
+        .parallax-title {
+            a {
+                h1 {
+                font-size: 35px;
+                }
+            }
+        }
+    }
+}
