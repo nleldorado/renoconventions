@@ -32,8 +32,6 @@ const Gallery = ({images}) => {
               src={src}
               alt=""
               style={{
-                width: "200px",
-                height: "120px",
                 padding: "0 4px",
                 // borderRadius: "20px",
                 objectFit: "cover",
