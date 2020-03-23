@@ -10,7 +10,7 @@ const insideStyles = {
   };
 
 
-const Parallaxx = ({text, image, url}) => {
+const Parallaxx = ({text, image, url, height}) => {
     return (
         <div>
             <Parallax
@@ -34,7 +34,7 @@ const Parallaxx = ({text, image, url}) => {
             )}
         >
             
-           <div className="parallax">
+           <div className="parallax" style={{height: height}}>
                 <div className="parallax-title" style={insideStyles}>
                     <Link to={url}><h1>{text}</h1></Link>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
+import Parallaxx from '../components/Parallaxx'
 
 const images = [
   {
@@ -29,6 +30,12 @@ const attractions = () => {
     return (
         <div>
             <Layout>
+              <Parallaxx 
+                  text={'Nearby Attractions'} 
+                  image={'https://sgl-assets.imgix.net/files/article_hero/truckee-river-reno-riverwalk-fall-via-magazine.jpg?w=1440&h=720&crop=faces,edges'} 
+                  url={'/attractions'}
+                  height={'60vh'}
+              />
                 <Gallery images={images} />
             </Layout>
         </div>

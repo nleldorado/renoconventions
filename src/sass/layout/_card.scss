@@ -1,0 +1,28 @@
+.card-one {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    .card-info {
+        width: 60%;
+        padding: 30px;
+    }
+    .photos {
+        width: 40%;
+    }
+}
+
+.card-two {
+    max-width: 1440px;
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    background: #eee;
+    .card-info {
+        width: 60%;
+        padding: 30px;
+    }
+    .photos {
+        width: 40%;
+    }
+}

@@ -10,6 +10,7 @@ const Restaurants = () => {
                 text={'Restaurants'}
                 image={RestaurantImage}
                 url={'/restaurants'}
+                height={'100vh'}
             /> 
         <Slick/>
         </div>

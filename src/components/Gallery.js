@@ -32,10 +32,10 @@ const Gallery = ({images}) => {
               src={src}
               alt=""
               style={{
-                width: "250px",
-                height: "130px",
-                padding: "10px",
-                borderRadius: "20px",
+                width: "200px",
+                height: "120px",
+                padding: "0 4px",
+                // borderRadius: "20px",
                 objectFit: "cover",
                 objectPosition: "center"
               }}
