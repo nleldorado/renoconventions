@@ -22,18 +22,19 @@ const Navigation = () => {
             padding: change ? "0 16px" : "20px 16px",
             height: change ? "60px" : "100px",
             transition: "300ms ease"
-        };
+    }
     
-        let logo = {
-            width: change ? "120px" : "150px"
+    let logo = {
+        width: change ? "120px" : "150px"
 
-        }
+    }
         
-        let contact = {
-            padding: change ? "16px 20px" : "5px 20px",
-            background: "orangered",
-            borderRadius: change ? "0" : "10px"
-        }
+    let contact = {
+        padding: change ? "16px 20px" : "5px 20px",
+        background: "orangered",
+        borderRadius: change ? "0" : "10px"
+    }
+
     return (
      
             <div className="navigation" style={style}>

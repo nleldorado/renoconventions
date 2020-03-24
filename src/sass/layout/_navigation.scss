@@ -30,49 +30,68 @@
                 font-size: 14px;
                 display: inline-block;
                 position: relative;
+
                     .active {
-                        // height: 3px;
-                        // width: 100%;
-                        // background: #fff;
-                        // margin-top: 5px;
-                   
                         color: orangered;
                         font-weight: bolder;
                     }
-                    // .active:after {
-                    //     height: 3px;
-                    //     width: 100%;
-                    //     display: block;
-                    //     margin-top: 13px;
-                    //     right: 0;
-                    //     background: #fff;
-                    // }
+        
                     a {
                         text-decoration: none;
                         color: white;
-                        transition: 0.2s ease;
+                        transition: 0.5s ease;
+                       
                     }
-                    a:after {
-                        content: '';
-                        position: absolute;
-                        width: 0;
-                        height: 3px;
-                        display: block;
-                        margin-top: 14px;
-                        right: 0;
-                        background: orangered;
-                        transition: width .4s ease;
-                    }
-                    a:hover {
-                        color: orangered;
+                    // a:after {
+                    //     content: '';
+                    //     position: absolute;
+                    //     width: 0;
+                    //     height: 3px;
+                    //     display: block;
+                    //     background: orangered;
+                    //     width: 0;
+                    //     left: 50%;
                         
-                    }
-                    a:hover:after {
-                        width: 100%;
-                        left: 0;
-                        background: orangered;
-                      }
+                    //     -webkit-transform: translateX(-50%);
+                    //     -ms-transform: translateX(-50%);
+                    //     transform: translateX(-50%);
+                    //     -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                    //     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                        
+                    // }
+                    // a:hover {
+                    //     color: orangered;
+                        
+                    // }
+                    // a:hover:after {
+                    //     width: 100%;
+                        
+                    //   }
             }
+            li:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 3px;
+                display: block;
+                background: orangered;
+                width: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                margin-top: 14px;
+            }
+            li:hover, li:hover a {
+                color: orangered;
+            }
+            li:hover:after {
+                width: 100%;
+               
+                
+              }
         }
     }
     .contact-link {
