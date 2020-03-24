@@ -51,7 +51,9 @@ const Navigation = () => {
                             <li><Link activeClassName="active" to="/sports">Sports</Link></li>
                             <li><Link activeClassName="active" to="/golf">Golf</Link></li>
                             <li><Link activeClassName="active" to="/attractions">Attractions</Link></li>
-                            <li><Link activeClassName="active" to="/restaurants">Restaurants</Link></li>     
+                            <li><Link activeClassName="active" to="/restaurants">Restaurants</Link></li> 
+                            <li><Link activeClassName="active" to="/team">Team</Link></li> 
+                            <li><Link activeClassName="active" to="/gallery">Gallery</Link></li>     
                         </ul>
                     </div>
                     <div className="contact-link" style={contact}>
