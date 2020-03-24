@@ -35,6 +35,17 @@ const Navigation = () => {
         borderRadius: change ? "0" : "10px"
     }
 
+    const links = [
+        {path: "/", name: "Home"},
+        {path: "/conventions", name: "Conventions"},
+        {path: "/sports", name: "Sports"},
+        {path: "/golf", name: "Sports"},
+        {path: "/attractions", name: "Golf"},
+        {path: "/restaurants", name: "Attractions"},
+        {path: "/team", name: "Team"},
+        {path: "/gallery", name: "Gallery"}
+    ]
+
     return (
      
             <div className="navigation" style={style}>
@@ -46,14 +57,23 @@ const Navigation = () => {
                     </div>
                     <div className="nav-links">
                         <ul>
-                            <li><Link activeClassName="active" to="/">Home</Link></li>
+                            {
+                                links.map((link, index) => (
+                                    <li>
+                                        <Link activeClassName="active" to={link.path}>
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                            {/* <li><Link activeClassName="active" to="/">Home</Link></li>
                             <li><Link activeClassName="active" to="/conventions">Convention</Link></li>
                             <li><Link activeClassName="active" to="/sports">Sports</Link></li>
                             <li><Link activeClassName="active" to="/golf">Golf</Link></li>
                             <li><Link activeClassName="active" to="/attractions">Attractions</Link></li>
                             <li><Link activeClassName="active" to="/restaurants">Restaurants</Link></li> 
                             <li><Link activeClassName="active" to="/team">Team</Link></li> 
-                            <li><Link activeClassName="active" to="/gallery">Gallery</Link></li>     
+                            <li><Link activeClassName="active" to="/gallery">Gallery</Link></li>      */}
                         </ul>
                     </div>
                     <div className="contact-link" style={contact}>
