@@ -52,7 +52,6 @@ const sports = () => {
               <CardThree
                 title="Lorem Ipsum"
                 info={info}
-                info2={info2}
                 images={images}
               />
               <CardThree
@@ -63,7 +62,6 @@ const sports = () => {
               <CardThree
                 title="Lorem Ipsum"
                 info={info}
-                info2={info2}
                 images={images}
               />
             </Layout>
