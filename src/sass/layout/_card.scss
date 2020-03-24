@@ -29,6 +29,16 @@
     }
 }
 
+.card-three {
+    max-width: 1440px;
+    padding: 100px 50px;
+    margin: auto;
+
+    .card-info {
+        padding: 0 30px 30px;
+    }
+}
+
 @media (max-width: 600px) {
     .card-one {
         flex-direction: column;
