@@ -15,7 +15,7 @@ const Parallaxx = ({text, image, url, height}) => {
         <div>
             <Parallax
             bgImage={image}
-            strength={400}
+            strength={-200}
             renderLayer={percentage => (
                 <div
                     style={{
