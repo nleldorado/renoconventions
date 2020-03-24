@@ -8,7 +8,7 @@ const Conventions = () => {
                 text={'Conventions'} 
                 image={'https://q-cf.bstatic.com/images/hotel/max1280x900/164/164341038.jpg'} 
                 url={'/conventions'}
-                height={'100vh'}
+                // height={'100vh'}
             />
         </div>
     );
