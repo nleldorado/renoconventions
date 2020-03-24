@@ -1,0 +1,9 @@
+.collapsable {
+    padding: 100px 50px;
+    width: 50%;
+    margin: auto;
+    .accordion__button {
+        background: transparent !important;
+        outline: none;
+    }
+}
