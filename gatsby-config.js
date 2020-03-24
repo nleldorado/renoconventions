@@ -5,6 +5,7 @@ module.exports = {
     author: `Nguyen Le`,
   },
   plugins: [
+    `react-reveal`,
     `react-use-scroll-position`,
     `react-burger-menu`,
     `react-images`,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Link } from "gatsby"
+import Fade from 'react-reveal/Fade';
 
 const insideStyles = {
     position: "absolute",
@@ -33,15 +34,18 @@ const Parallaxx = ({text, image, url, height}) => {
                 </div>
             )}
         >
-            
+        
            <div className="parallax" style={{height: height}}>
                 <div className="parallax-title" style={insideStyles}>
-                    <Link to={url}><h1>{text}</h1></Link>
+                    <Fade down>
+                        <Link to={url}><h1>{text}</h1></Link>
+                    </Fade>
                 </div>
             </div>
             
         </Parallax>
         </div>
+        
     );
 };
 
