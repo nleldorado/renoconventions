@@ -30,18 +30,18 @@ const MobileNavigation = () => {
     return (
         <div style={style} className="mobile-navigation">
             <Menu>
-                <Link id="home" className="menu-item" to="/">Home</Link>
-                <Link id="about" className="menu-item" to="/conventions">Conventions</Link>
-                <Link id="contact" className="menu-item" to="/sports">Sports</Link>
-                <Link id="home" className="menu-item" to="/golf">Golf</Link>
-                <Link id="about" className="menu-item" to="/attractions">Attractions</Link>
-                <Link id="contact" className="menu-item" to="/restaurants">Restaurants</Link>
-                <Link id="home" className="menu-item" to="/gallery">Gallery</Link>
-                <Link id="contact" className="menu-item" to="/contact">Contact</Link>
+                <Link activeStyle={{ color: "orangered" }} id="home" className="menu-item" to="/">Home</Link>
+                <Link activeStyle={{ color: "orangered" }} id="about" className="menu-item" to="/conventions">Conventions</Link>
+                <Link activeStyle={{ color: "orangered" }} id="contact" className="menu-item" to="/sports">Sports</Link>
+                <Link activeStyle={{ color: "orangered" }} id="home" className="menu-item" to="/golf">Golf</Link>
+                <Link activeStyle={{ color: "orangered" }} id="about" className="menu-item" to="/attractions">Attractions</Link>
+                <Link activeStyle={{ color: "orangered" }} id="contact" className="menu-item" to="/restaurants">Restaurants</Link>
+                <Link activeStyle={{ color: "orangered" }} id="home" className="menu-item" to="/gallery">Gallery</Link>
+                <Link activeStyle={{ color: "orangered" }} id="contact" className="menu-item" to="/contact">Contact</Link>
                 <p>Connect with us</p>
-                <Link id="home" className="menu-item" to="/">Facebook</Link>
-                <Link id="contact" className="menu-item" to="/contact">Instagram</Link>
-                <Link onClick={ showSettings } className="menu-item--small" to="">Twitter</Link>
+                <Link activeStyle={{ color: "orangered" }} id="home" className="menu-item" to="/#">Facebook</Link>
+                <Link activeStyle={{ color: "orangered" }} id="contact" className="menu-item" to="/#">Instagram</Link>
+                <Link activeStyle={{ color: "orangered" }} onClick={ showSettings } className="menu-item--small" to="/#">Twitter</Link>
             </Menu>
         </div>
     );

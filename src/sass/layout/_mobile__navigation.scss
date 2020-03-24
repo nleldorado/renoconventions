@@ -9,6 +9,9 @@
         background: rgba(33, 33, 33, 0.9);
         z-index: 999;
 
+        .active {
+            color: orangered;
+        }
         /* Position and sizing of burger button */
         .bm-burger-button {
             position: fixed;
