@@ -39,6 +39,29 @@
     }
 }
 
+.card-four {
+    max-width: 1440px;
+    padding: 100px 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    .card-info {
+        padding: 0 30px;
+        width: 50%;
+    }
+    .card-image {
+        width: 50%;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px -14px rgba(0,0,0,0.5);
+        overflow: hidden;
+        height: 400px;
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 600px) {
     .card-one {
         flex-direction: column;
