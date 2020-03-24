@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 
 const Icon = props => (
-    <Link to={props.url}>
+    <Link activeClassName="active" to={props.url}>
       {props.text} <FontAwesomeIcon icon={props.icon} />
     </Link>
    )

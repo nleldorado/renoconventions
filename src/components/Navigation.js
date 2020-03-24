@@ -18,7 +18,7 @@ const Navigation = () => {
     }
   
     let style = {
-            background: change ? "rgba(33, 33, 33, 0.9)" : "rgba(33, 33, 33, 0.5)",
+            background: change ? "rgba(33, 33, 33, 0.95)" : "rgba(33, 33, 33, 0.5)",
             padding: change ? "0 16px" : "20px 16px",
             height: change ? "60px" : "100px",
             transition: "300ms ease"
@@ -31,7 +31,8 @@ const Navigation = () => {
         
         let contact = {
             padding: change ? "16px 20px" : "5px 20px",
-            background: "orangered"
+            background: "orangered",
+            borderRadius: change ? "0" : "10px"
         }
     return (
      
@@ -44,16 +45,20 @@ const Navigation = () => {
                     </div>
                     <div className="nav-links">
                         <ul>
-                            <Link to="/"><li>Home</li></Link>
-                            <Link to="/conventions"><li>Conventions</li></Link>
-                            <Link to="/sports"><li>Sports</li></Link>
-                            <Link to="/golf"><li>Golf</li></Link>
-                            <Link to="/attractions"><li>Attractions</li></Link>
-                            <Link to="/restaurants"><li>Restaurants</li></Link>          
+                            <li><Link activeClassName="active" to="/">Home</Link></li>
+                            <li><Link activeClassName="active" to="/conventions">Convention</Link></li>
+                            <li><Link activeClassName="active" to="/sports">Sports</Link></li>
+                            <li><Link activeClassName="active" to="/golf">Golf</Link></li>
+                            <li><Link activeClassName="active" to="/attractions">Attractions</Link></li>
+                            <li><Link activeClassName="active" to="/restaurants">Restaurants</Link></li>     
                         </ul>
                     </div>
                     <div className="contact-link" style={contact}>
-                       <span className="envelope"><Icon to={'/contact'} text={"Contact Us"} /></span>
+                        <ul>
+                            <li>
+                                <Link activeClassName="active" to='/contact'>Contact Us</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

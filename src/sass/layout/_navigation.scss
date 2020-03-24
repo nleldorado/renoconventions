@@ -12,23 +12,66 @@
         width: 150px;
         transition: 0.3s ease;
     }
+
     .nav-links {
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            a {
-                text-decoration: none;
-                color: white;
-                li {
-                    margin: 0;
-                    padding: 0 16px;
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                    text-transform: uppercase; // font-weight: bold;
-                    font-size: 14px;
-                }
+         
+            li {
+                margin: 0;
+                padding: 0 16px;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                text-transform: uppercase; // font-weight: bold;
+                font-size: 14px;
+                display: inline-block;
+                position: relative;
+                    .active {
+                        // height: 3px;
+                        // width: 100%;
+                        // background: #fff;
+                        // margin-top: 5px;
+                   
+                        color: orangered;
+                        font-weight: bolder;
+                    }
+                    // .active:after {
+                    //     height: 3px;
+                    //     width: 100%;
+                    //     display: block;
+                    //     margin-top: 13px;
+                    //     right: 0;
+                    //     background: #fff;
+                    // }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.2s ease;
+                    }
+                    a:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 3px;
+                        display: block;
+                        margin-top: 14px;
+                        right: 0;
+                        background: orangered;
+                        transition: width .4s ease;
+                    }
+                    a:hover {
+                        color: orangered;
+                        
+                    }
+                    a:hover:after {
+                        width: 100%;
+                        left: 0;
+                        background: orangered;
+                      }
             }
         }
     }
@@ -36,16 +79,43 @@
         // border: 1px solid white;
         padding: 5px 20px;
         transition: 0.3s ease;
-        .envelope {
-            a {
-                text-decoration: none;
-                color: white;
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                text-transform: uppercase; // font-weight: bold;
-                font-size: 14px;
+        display: inline-block;
+                position: relative;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                    text-transform: uppercase; // font-weight: bold;
+                    font-size: 14px;
+                    transition: 0.2s ease;
+                }
+               
             }
         }
     }
+    .contact-link:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        display: block;
+        margin-top: 13px;
+        right: 0;
+        background: #fff;
+        transition: width .4s ease;
+    }
+    .contact-link:hover:after {
+        width: 100%;
+        left: 0;
+        background: #fff;
+      }
 }
 
 @media screen and (max-width: 768px) {
