@@ -39,9 +39,9 @@ const Navigation = () => {
         {path: "/", name: "Home"},
         {path: "/conventions", name: "Conventions"},
         {path: "/sports", name: "Sports"},
-        {path: "/golf", name: "Sports"},
-        {path: "/attractions", name: "Golf"},
-        {path: "/restaurants", name: "Attractions"},
+        {path: "/golf", name: "Golf"},
+        {path: "/attractions", name: "Attractions"},
+        {path: "/restaurants", name: "Restaurants"},
         {path: "/team", name: "Team"},
         {path: "/gallery", name: "Gallery"}
     ]
