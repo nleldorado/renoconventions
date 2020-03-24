@@ -47,26 +47,27 @@ let restaurants = [
 const Slick = () => {
     const settings = {
         // dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 4000,
-        autoplaySpeed: 4000,
-        cssEase: "linear",
-        slidesToShow: 4,
-        // slidesToScroll: 1,
-        lazyLoad: true,
         
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 3000,
+        cssEase: "linear",
         // pauseOnHover: true,
         // nextArrow: <SampleNextArrow />,
         // prevArrow: <SamplePrevArrow />
         responsive: [{
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              speed: 4000,
-              autoplaySpeed: 4000,
-              cssEase: "linear",
-              slidesToScroll: 1,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                speed: 3000,
+                autoplaySpeed: 3000,
+                cssEase: "linear"
             }
           }]
       };
