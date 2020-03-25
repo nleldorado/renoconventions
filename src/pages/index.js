@@ -19,6 +19,8 @@ const content = [
     description:
       "Eldorado / Circus Circus / Silver Legacy",
     button: "Read More",
+    // video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    // video: "https://nrsplus.com/ext/hero-banner-EDITED.mp4"
     image: "https://unite.unity.com/themes/unite/images/2018/losangeles/whatson.jpg"
   },
   {

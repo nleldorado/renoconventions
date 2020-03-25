@@ -14,6 +14,8 @@ const SliderHero = ({content}) => {
                     className="slider-content"
                     style={{ background: `url('${item.image}') no-repeat center center` }}
                     >
+                     <video src={item.video} mute="true" autoplay="true" type="video/mp4" />
+
                         <div className="inner">
                        
                             <h1><Fade top>{item.title}</Fade></h1>
