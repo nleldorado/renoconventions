@@ -36,6 +36,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `https://dev-renoconventions.pantheonsite.io/`,
+        // apiBase: `api`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `reno-conventions`,
