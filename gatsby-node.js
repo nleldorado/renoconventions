@@ -11,9 +11,9 @@ const path = require('path')
 exports.createPages = async ({ actions, graphql}) => {
     const { createPage } = actions;
 
-    const articles = await graphql(`
+    const sports = await graphql(`
     {
-        allNodeArticle {
+        allNodeSport {
           nodes {
             id
             title
@@ -25,13 +25,37 @@ exports.createPages = async ({ actions, graphql}) => {
       }
     
     `);
-    articles.data.allNodeArticle.nodes.map(articleData => 
+    sports.data.allNodeSport.nodes.map(sportData => 
         createPage({
-            path: articleData.path.alias,
-            component: path.resolve(`src/templates/article.js`),
+            path: sportData.path.alias,
+            component: path.resolve(`src/templates/sport.js`),
             context: {
-                ArticleId: articleData.id,
+                SportId: sportData.id,
             }
         })
 )
+    const articles = await graphql(`
+        {
+            allNodeArticle {
+            nodes {
+                id
+                title
+                path {
+                alias
+                }
+            }
+            }
+        }
+        
+        `);
+        articles.data.allNodeArticle.nodes.map(articleData => 
+            createPage({
+                path: articleData.path.alias,
+                component: path.resolve(`src/templates/article.js`),
+                context: {
+                    ArticleId: articleData.id,
+                }
+            })
+    )
+
 }
