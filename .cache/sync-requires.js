@@ -5,6 +5,8 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-sport-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/templates/sport.js"))),
+  "component---src-templates-article-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/templates/article.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/win/reno/renoconventions/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/404.js"))),
   "component---src-pages-attractions-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/attractions.js"))),
