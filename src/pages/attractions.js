@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout'
-import Gallery from '../components/Gallery'
+import GalleryModal from '../components/GalleryModal'
 import Parallaxx from '../components/Parallaxx'
 import Collapsable from '../components/Collapsable'
 
@@ -50,7 +50,7 @@ const attractions = () => {
               <Collapsable 
                   items={items}
               />
-              <Gallery images={images} />
+              <GalleryModal images={images} />
             </Layout>
         </div>
     );

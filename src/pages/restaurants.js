@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout'
-import Gallery from '../components/Gallery'
+import GalleryModal from '../components/GalleryModal'
 import Parallaxx from '../components/Parallaxx'
 import RestaurantImage from '../images/restaurants.jpg'
 
@@ -36,7 +36,7 @@ const restaurants = () => {
                   url={'/restaurants'}
                   height={'60vh'}
               /> 
-                <Gallery images={images}/>
+                <GalleryModal images={images}/>
             </Layout>
         </div>
     );
