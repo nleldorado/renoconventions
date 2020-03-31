@@ -14,16 +14,13 @@ const SliderHero = ({content}) => {
                     className="slider-content"
                     style={{ background: `url('${item.image}') no-repeat center center` }}
                     >
-                     <video src={item.video} mute="true" autoplay="true" type="video/mp4" />
-
+                     {/* <video src={item.video} mute="true" autoplay="true" type="video/mp4" /> */}
                         <div className="inner">
                        
                             <h1><Fade top>{item.title}</Fade></h1>
-                            <p><Fade top>{item.description}</Fade></p>
-                            <button><Fade>{item.button}</Fade></button>
-                            
+                            <p>{item.description}</p>
+                            <button><Fade>{item.button}</Fade></button>  
                         </div>
-                    
                     </div>
                    
                 ))}

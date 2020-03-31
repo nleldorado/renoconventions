@@ -13,7 +13,7 @@ const Article = ({data}) => {
                 <img 
                     src={post.relationships.field_media_image.relationships.field_media_image.localFile.publicURL} 
                     alt= {post.relationships.field_media_image.field_media_image.alt} />
-               <div dangerouslySetInnerHTML={{ __html: post.body.processed}} />
+                <div dangerouslySetInnerHTML={{ __html: post.body.processed}} />
             </Layout>
         </div>
     );

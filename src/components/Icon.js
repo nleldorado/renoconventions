@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import {Link} from 'gatsby'
 
 const Icon = props => (
-    <Link activeClassName="active" to={props.url}>
-      {props.text} <FontAwesomeIcon icon={props.icon} />
-    </Link>
+    <button>
+      <FontAwesomeIcon icon={props.icon} />
+    </button>
    )
 
    export default Icon;

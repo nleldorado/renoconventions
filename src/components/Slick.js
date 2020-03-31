@@ -1,13 +1,10 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import Brew from '../images/restaurants/brewbrothers.png'
 import Buffet from '../images/restaurants/buffet.png'
-// import Butter from '../images/restaurants/butter.png'
-// import Cafe from '../images/restaurants/cafe.png'
-// import Coffee from '../images/restaurants/coffee.png'
 import Habit from '../images/restaurants/habit.png'
 import Lastrada from '../images/restaurants/lastrada.png'
 import Panda from '../images/restaurants/panda.png'
@@ -46,8 +43,6 @@ let restaurants = [
 
 const Slick = () => {
     const settings = {
-        // dots: true,
-        
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -77,9 +72,6 @@ const Slick = () => {
             <div className="container">
                 <h1>Over 17 restaurants to choose from.</h1>
             <Slider {...settings}>
-                {/* <div>
-                <h3></h3>
-                </div> */}
                 {
                     restaurants.map((restaurant, index) => (
                         <div key={index}>

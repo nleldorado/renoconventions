@@ -1,15 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Resort from './Resorts'
 import CountIntersectionObserver from './CountIntersectionObserver'
 import Video from './Video'
 
 const Resorts = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const openModal = () => {
-        setIsOpen(true)
-    }
-
     return (
         <>
         <div className="about-resorts">

@@ -4,6 +4,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 const Gallery = ({images}) => {
     const [isOpen, setOpen] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
+
     return (
       <div className="gallery">
       <div className="image-gallery">
@@ -24,20 +25,25 @@ const Gallery = ({images}) => {
         </ModalGateway>
         <div>
           {images.map(({ src }, index) => (
+              <button
+                onClick={() => {
+                  setSelectedIndex(index);
+                  setOpen(true);
+                }}
+                key={index}
+              >
+
             <img
-              onClick={() => {
-                setSelectedIndex(index);
-                setOpen(true);
-              }}
               src={src}
-              alt=""
+              alt={index}
+              key={index}
               style={{
                 padding: "0 4px",
-                // borderRadius: "20px",
                 objectFit: "cover",
                 objectPosition: "center"
               }}
             />
+            </button>
           ))}
         </div>
         </div>

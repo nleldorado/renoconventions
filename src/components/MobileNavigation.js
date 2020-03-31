@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, {useState, useEffect} from "react"
+import React, { useState } from "react"
 import { stack as Menu } from 'react-burger-menu'
 import { useScrollYPosition } from 'react-use-scroll-position';
 
@@ -23,10 +23,6 @@ const MobileNavigation = () => {
             transition: "300ms ease"
         };
 
-    const showSettings = (event) => {
-         event.preventDefault();
-    }
-
     const links = [
         {path: "/", name: "Home"},
         {path: "/conventions", name: "Conventions"},
@@ -39,9 +35,9 @@ const MobileNavigation = () => {
     ]
 
     const socialLinks = [
-        {path: "#", name:"Facebook"},
-        {path: "#", name:"Instagram"},
-        {path: "#", name:"Twitter"}
+        {path: "/#", name:"Facebook"},
+        {path: "/#", name:"Instagram"},
+        {path: "/#", name:"Twitter"}
     ]
 
     return (
@@ -49,29 +45,19 @@ const MobileNavigation = () => {
             <Menu>
                 {
                     links.map((link, index)=> (
-                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path}>
+                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path} key={index}>
                             {link.name}
                         </Link>
                     ))
                 }
-                {/* <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/">Home</Link>
-                <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/conventions">Conventions</Link>
-                <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/sports">Sports</Link>
-                <Link activeStyle={{ color: "orangered" }} className="menu-item" to="/golf">Golf</Link>
-                <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/attractions">Attractions</Link>
-                <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/restaurants">Restaurants</Link>
-                <Link activeStyle={{ color: "orangered" }}  className="menu-item" to="/gallery">Gallery</Link>
-                <Link activeStyle={{ color: "orangered" }} className="menu-item" to="/contact">Contact</Link> */}
                 <p>Connect with us</p>
                 {
                     socialLinks.map((link, index)=> (
-                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path} target="_blank" >
+                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path} target="_blank" key={index}>
                             {link.name}
                         </Link>
                     ))
                 }
-                {/* <p>Other</p>
-                <Link activeStyle={{ color: "orangered" }} onClick={ showSettings } className="menu-item--small" to="/#">Settings</Link> */}
             </Menu>
         </div>
     );

@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
-import React, {useState, useEffect} from "react"
-import Icon from './Icon'
+import React, { useState } from "react"
 import { useScrollYPosition } from 'react-use-scroll-position';
 import Image from './image'
 
@@ -58,21 +57,13 @@ const Navigation = () => {
                         <ul>
                             {
                                 links.map((link, index) => (
-                                    <li>
+                                    <li key={index}>
                                         <Link activeClassName="active" to={link.path}>
                                             {link.name}
                                         </Link>
                                     </li>
                                 ))
                             }
-                            {/* <li><Link activeClassName="active" to="/">Home</Link></li>
-                            <li><Link activeClassName="active" to="/conventions">Convention</Link></li>
-                            <li><Link activeClassName="active" to="/sports">Sports</Link></li>
-                            <li><Link activeClassName="active" to="/golf">Golf</Link></li>
-                            <li><Link activeClassName="active" to="/attractions">Attractions</Link></li>
-                            <li><Link activeClassName="active" to="/restaurants">Restaurants</Link></li> 
-                            <li><Link activeClassName="active" to="/team">Team</Link></li> 
-                            <li><Link activeClassName="active" to="/gallery">Gallery</Link></li>      */}
                         </ul>
                     </div>
                     <div className="contact-link" style={contact}>

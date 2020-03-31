@@ -16,28 +16,28 @@ const Footer = () => {
                     <div className="services">
                         <h3>Services</h3>
                         <ul>
-                            <li><Link to="/">Link 1</Link></li>
-                            <li><Link to="/">Link 2</Link></li>
-                            <li><Link to="/">Link 3</Link></li>
-                            <li><Link to="/">Link 4</Link></li>
-                            <li><Link to="/">Link 5</Link></li>
+                            <li><Link to="/#">Link 1</Link></li>
+                            <li><Link to="/#">Link 2</Link></li>
+                            <li><Link to="/#">Link 3</Link></li>
+                            <li><Link to="/#">Link 4</Link></li>
+                            <li><Link to="/#">Link 5</Link></li>
                         </ul>
                     </div>
                     <div className="pages">
                         <h3>Page Links</h3>
                         <ul>
-                            <li><Link to="/">Link 1</Link></li>
-                            <li><Link to="/">Link 2</Link></li>
-                            <li><Link to="/">Link 3</Link></li>
-                            <li><Link to="/">Link 4</Link></li>
-                            <li><Link to="/">Link 5</Link></li>
+                            <li><Link to="/#">Link 1</Link></li>
+                            <li><Link to="/#">Link 2</Link></li>
+                            <li><Link to="/#">Link 3</Link></li>
+                            <li><Link to="/#">Link 4</Link></li>
+                            <li><Link to="/#">Link 5</Link></li>
                         </ul>
                     </div>
                     <div className="subscribe">
                         <h3>Newsletter</h3>
                         <form action="#">
                             <input type="text" className="subscribe_input" placeholder="Enter Email Address" />
-                            <span className="icon"><Icon to={'/'} icon={'paper-plane'} /></span>
+                            <span className="icon"><Icon icon={'paper-plane'} /></span>
                         </form>
                         
                         <ul>
@@ -60,11 +60,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                {/* <hr/> */}
-             
+            
                 © {new Date().getFullYear()}, 
                 {` `}
-                <Link to="https://www.renoconventions.com">Reno Conventions. All Rights Reserved</Link>
+                <Link to="/">Reno Conventions. All Rights Reserved</Link>
             </footer>
         </div>
     );

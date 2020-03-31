@@ -3,36 +3,46 @@ import Eldorado from '../images/eldorado.svg'
 import Silver from '../images/silver_legacy.svg'
 import Circus from '../images/circus_circus.svg'
 
+
+const Card = ({ image, title, bookTitle, bookUrl, websiteTitle, websiteUrl }) => (
+        <div className="content">
+        <div className="content-overlay"></div>
+        <img className="content-image" src={image} alt="eldorado logo" />
+        <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">{title}</h3>
+            <a href={bookUrl} className="content-text">{bookTitle}</a>
+            <a href={websiteUrl} className="content-text">{websiteTitle}</a>
+        </div>
+    </div>
+    )
+
 const Resorts = () => {
     return (
         <div className="resorts">
-            <div class="content">
-                <div className="content-overlay"></div>
-                    <img className="content-image" src={Eldorado} />
-                    <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">Eldorado</h3>
-                    <a href="/" className="content-text">Book a Room</a>
-                    <a href="/" className="content-text">View Website</a>
-                </div>
-            </div>
-            <div class="content circus">
-                <div className="content-overlay"></div>
-                    <img className="content-image" src={Circus} />
-                    <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">Circus Circus</h3>
-                    <a href="/" className="content-text">Book a Room</a>
-                    <a href="/" className="content-text">View Website</a>
-                </div>
-            </div>
-            <div class="content silver">
-                <div className="content-overlay"></div>
-                    <img className="content-image" src={Silver} />
-                    <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">Silver Legacy</h3>
-                    <a href="/" className="content-text">Book a Room</a>
-                    <a href="/" className="content-text">View Website</a>
-                </div>
-            </div>
+            <Card 
+                image={Eldorado}
+                title={"Eldorado"}
+                bookTitle={"Book a Room"}
+                websiteTitle={"View Website"}
+                bookUrl={"/#"}
+                websiteUrl={"/#"}
+            />
+            <Card 
+                image={Circus}
+                title={"Circus Circus"}
+                bookTitle={"Book a Room"}
+                websiteTitle={"View Website"}
+                bookUrl={"/#"}
+                websiteUrl={"/#"}
+            />
+            <Card 
+                image={Silver}
+                title={"Silver Legacy"}
+                bookTitle={"Book a Room"}
+                websiteTitle={"View Website"}
+                bookUrl={"/#"}
+                websiteUrl={"/#"}
+            />
         </div>
     );
 };
