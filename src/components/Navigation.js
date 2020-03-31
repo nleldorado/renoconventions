@@ -32,7 +32,6 @@ const Navigation = () => {
     let contact = {
         padding: change ? "16px 20px" : "5px 20px",
         background: "orangered",
-        borderRadius: change ? "0" : "10px"
     }
 
     const links = [

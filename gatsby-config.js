@@ -5,18 +5,6 @@ module.exports = {
     author: `Nguyen Le`,
   },
   plugins: [
-    // `react-accessible-accordion`,
-    // `react-reveal`,
-    // `react-use-scroll-position`,
-    // `react-burger-menu`,
-    // `react-images`,
-    // `slick-carousel`,
-    // `react-slick`,
-    // `react-parallax`,
-    // `react-intersection-observer`,
-    // `react-countup`,
-    // `react-modal-video`,
-    // `react-animated-slider`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -38,10 +26,19 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `https://dev-renoconventions.pantheonsite.io/`,
-        // apiBase: `api`,
+        baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
+        apiBase: `jsonapi`,
       },
     },
+    // can use more than one drupal source to query data into gatsby
+    //dev-renoconventions drupal demo site with content already created which is used to test graphql with gatsby
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `https://dev-renoconventions.pantheonsite.io/`,
+        // apiBase: `api`,
+        },
+      },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
