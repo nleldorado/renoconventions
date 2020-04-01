@@ -17,23 +17,22 @@ const SliderHero = ({className}) => {
             eldorado: file(relativePath: { eq: "eldorado.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
                 }
             }
             golf: file(relativePath: { eq: "golf.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
                 }
             }
             baseball: file(relativePath: { eq: "baseball.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
-                }
-                
+                    ...GatsbyImageSharpFluid_tracedSVG
+                }   
             }
         }
     }
@@ -55,7 +54,7 @@ const SliderHero = ({className}) => {
 
     const slides = [
         {title: 'Reno Conventions', description: 'Eldorado / Circus Circus / Silver Legacy', button: 'READ MORE', image: backgroundOne},
-        {title: 'TItle Slide 2', description: 'Description of slide 2', button: 'READ MORE', image: backgroundTwo},
+        {title: 'Title Slide 2', description: 'Description of slide 2', button: 'READ MORE', image: backgroundTwo},
         {title: 'Title Slide 3', description: 'Description of slide 3', button: 'READ MORE', image: backgroundThree},
     ]
 
@@ -70,6 +69,8 @@ const SliderHero = ({className}) => {
                 key={index}
                 fluid={item.image}
                 fadeIn={false}
+                // durationFadeIn="100ms"
+                backgroundColor="white"
             >
                 <div className="inner">
                     <h1><Fade top>{item.title}</Fade></h1>
