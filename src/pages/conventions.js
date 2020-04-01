@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import CardOne from '../components/CardOne'
 import CardTwo from '../components/CardTwo'
 import Parallaxx from '../components/Parallaxx'
+import SEO from '../components/seo'
 
 const images = [
   {
@@ -31,6 +32,7 @@ const conventions = () => {
     return (
         <div>
             <Layout>
+              <SEO title="Conventions" />
               <Parallaxx 
                   text={'Conventions'} 
                   image={'https://q-cf.bstatic.com/images/hotel/max1280x900/164/164341038.jpg'} 

@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout'
-import GalleryModal from '../components/GalleryModal'
+import Gallery from '../components/GalleryModal'
 import Parallaxx from '../components/Parallaxx'
 import Collapsable from '../components/Collapsable'
+import SEO from '../components/seo'
 
 const images = [
   {
@@ -41,16 +42,17 @@ const attractions = () => {
     return (
         <div>
             <Layout>
+              <SEO title="Nearby Attractions" />
               <Parallaxx 
                   text={'Nearby Attractions'} 
-                  image={'https://sgl-assets.imgix.net/files/article_hero/truckee-river-reno-riverwalk-fall-via-magazine.jpg?w=1440&h=720&crop=faces,edges'} 
+                  image={'https://images.unsplash.com/photo-1536549702260-2fe62b52b09d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'} 
                   url={'/attractions'}
                   height={'60vh'}
               />
               <Collapsable 
                   items={items}
               />
-              <GalleryModal images={images} />
+              <Gallery images={images} />
             </Layout>
         </div>
     );

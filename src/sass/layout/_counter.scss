@@ -5,6 +5,10 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 50px 0 116px;
+        h4 {
+            font-family: $textFont;
+           
+        }
         .count {
             width: 25%;
             padding: 0 16px;
@@ -12,6 +16,8 @@
             text-align: center;
             font-weight: bold;
             position: relative;
+            // font-family: $headerFont;
+            
         }
         .counter {
             width: 25%;
@@ -20,7 +26,9 @@
             text-align: center;
             font-weight: bold;
             position: relative;
+            
         }
+   
         .counter:after {
             content: "";
             width:1px;

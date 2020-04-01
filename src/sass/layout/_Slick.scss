@@ -7,7 +7,10 @@
         width: 100%;
         max-width: 1440px;
         margin: auto;
-        
+        h1 {
+            font-family: $textFont;
+            color: $mainColor;
+        }
         
         .slick-prev, .slick-next {
             top: 45px;

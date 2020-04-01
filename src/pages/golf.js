@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout'
-import GalleryModal from '../components/GalleryModal'
+import Gallery from '../components/GalleryModal'
 import Parallaxx from '../components/Parallaxx'
 import CardFour from '../components/CardFour'
+import SEO from '../components/seo'
 
 const images = [
   {
@@ -43,9 +44,10 @@ const golf = () => {
     return (
         <div>
             <Layout>
+              <SEO title="Golf Courses" />
               <Parallaxx 
                   text={'Golf Courses'} 
-                  image={'https://images.unsplash.com/photo-1535132011086-b8818f016104?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'} 
+                  image={'https://images.unsplash.com/photo-1526166881522-d1ede7946450?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=1350&q=80'} 
                   url={'/golf'}
                   height={'60vh'}
               />
@@ -55,7 +57,7 @@ const golf = () => {
                 image={image}
                 alt="Lorem Ipsum"
               />
-                <GalleryModal images={images}/>
+                <Gallery images={images}/>
                 
               <br/>
               <br/>

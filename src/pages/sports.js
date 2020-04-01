@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout'
 import Parallaxx from '../components/Parallaxx'
 import CardThree from '../components/CardThree'
+import SEO from '../components/seo'
 
 const images = [
   {
@@ -41,9 +42,10 @@ const sports = () => {
     return (
         <div>
             <Layout>
+              <SEO title="Sports" />
               <Parallaxx 
                   text={'Sports'}
-                  image={'https://i.pinimg.com/originals/b0/56/f2/b056f2c2f37a44bb3268d81cd1f3d1e0.jpg'}
+                  image={'https://www.connectmeetings.com/sites/connect/meetings/files/DT_REno_1920x1080.jpeg'}
                   url={'/sports'}
                   height={'60vh'}
               />

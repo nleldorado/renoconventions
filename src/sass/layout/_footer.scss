@@ -10,6 +10,7 @@ footer {
     a {
         text-decoration: none;
         color: #212121;
+        font-family: $textFont;
         
     }
     .footer {
@@ -20,6 +21,10 @@ footer {
         padding: 100px 0;
         
         .services, .pages, .subscribe {
+            h3 {
+                font-family: $headerFont;
+                text-transform: uppercase;
+            }
             h3::after {
                 content: "";
                 display: block;
@@ -52,7 +57,7 @@ footer {
                 position: relative;
                 left: -4px;
                 outline: none;
-
+                font-family: $headerFont;
             }
             h3 {
                 text-align: left;

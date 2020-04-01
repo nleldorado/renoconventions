@@ -17,7 +17,7 @@ const Navigation = () => {
     }
   
     let style = {
-            background: change ? "rgba(33, 33, 33, 0.95)" : "rgba(33, 33, 33, 0.5)",
+            background: change ? "rgba(33, 33, 33, 0.95)" : "rgba(33, 33, 33, 0)",
             padding: change ? "0 16px" : "20px 16px",
             height: change ? "60px" : "100px",
             transition: "300ms ease"

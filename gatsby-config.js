@@ -23,6 +23,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // need authentication
     {
       resolve: `gatsby-source-drupal`,
       options: {

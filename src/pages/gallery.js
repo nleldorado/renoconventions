@@ -25,7 +25,7 @@ const GalleryPage = ({ data }) => {
             <SEO title="Gallery" />
             <Parallaxx 
                   text={'Gallery'}
-                  image=""
+                  image="https://images.unsplash.com/photo-1526930795887-9ff8eb71f13f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80"
                   url={'/gallery'}
                   height={'60vh'}
               />
