@@ -21,7 +21,7 @@ const SliderHero = ({className}) => {
                 }   
             }
             }
-            chairs: file(relativePath: { eq: "chairs.jpg" }) {
+            chairs: file(relativePath: { eq: "chairs.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid_tracedSVG
