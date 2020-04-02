@@ -41,7 +41,7 @@ const SliderHero = ({className}) => {
 
     const backgroundOne = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3))`, eldorado.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0))`, baseball.childImageSharp.fluid,
     ]
     const backgroundTwo = [
         `linear-gradient(
@@ -49,7 +49,7 @@ const SliderHero = ({className}) => {
     ]
     const backgroundThree = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, baseball.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, golf.childImageSharp.fluid,
     ]
 
     const slides = [
