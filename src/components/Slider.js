@@ -8,9 +8,9 @@ import BackgroundImage from 'gatsby-background-image'
 
 const SliderHero = ({className}) => {
   const {
-    eldorado,
-    golf,
     baseball,
+    chairs,
+    golf,
     } = useStaticQuery(
         graphql`
         query {
