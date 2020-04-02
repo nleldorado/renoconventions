@@ -38,7 +38,7 @@ const Parallaxx = ({text, image, url, height}) => {
            {/* <video src="//dl.dropbox.com/s/5z4jupv385iboiu/lab-coding.mp4" mute={true} autoplay="true" type="video/mp4" width="100%" height="y" /> */}
 
                 <div className="parallax-title" style={insideStyles}>
-                    <Fade down>
+                    <Fade up>
                         <Link to={url}><h1>{text}</h1></Link>
                     </Fade>
                 </div>
