@@ -14,7 +14,14 @@ const SliderHero = ({className}) => {
     } = useStaticQuery(
         graphql`
         query {
-            eldorado: file(relativePath: { eq: "eldorado.jpeg" }) {
+            baseball: file(relativePath: { eq: "baseball.jpeg" }) {
+                childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                }   
+            }
+            }
+            chairs: file(relativePath: { eq: "chairs.jpg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid_tracedSVG
@@ -28,24 +35,17 @@ const SliderHero = ({className}) => {
                 }
                 }
             }
-            baseball: file(relativePath: { eq: "baseball.jpeg" }) {
-                childImageSharp {
-                fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                }   
-            }
-        }
     }
     `
   )
 
     const backgroundOne = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, eldorado.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3))`, eldorado.childImageSharp.fluid,
     ]
     const backgroundTwo = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, golf.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, chairs.childImageSharp.fluid,
     ]
     const backgroundThree = [
         `linear-gradient(
