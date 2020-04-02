@@ -24,6 +24,7 @@ footer {
             h3 {
                 font-family: $headerFont;
                 text-transform: uppercase;
+                color: $mainColor;
             }
             h3::after {
                 content: "";
@@ -57,7 +58,7 @@ footer {
                 position: relative;
                 left: -4px;
                 outline: none;
-                font-family: $headerFont;
+                font-family: $textFont;
             }
             h3 {
                 text-align: left;
