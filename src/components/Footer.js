@@ -35,7 +35,8 @@ const Footer = () => {
                     </div>
                     <div className="subscribe">
                         <h3>Newsletter</h3>
-                        <p>Sign up for our email newsletters and stay informed of all the latest happenings in Reno!</p>
+                        {/* <p>Sign up for our email newsletters and stay informed of all the latest happenings in Reno!</p>
+                         */}
                         <form action="#">
                             <input type="text" className="subscribe_input" placeholder="Enter Email Address" />
                             <span className="icon"><Icon icon={'paper-plane'} /></span>
