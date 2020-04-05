@@ -8,30 +8,30 @@ import BackgroundImage from 'gatsby-background-image'
 
 const SliderHero = ({className}) => {
   const {
-    baseball,
     chairs,
     golf,
+    baseball,
     } = useStaticQuery(
         graphql`
         query {
             baseball: file(relativePath: { eq: "baseball.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }   
             }
-            }
+        }
             chairs: file(relativePath: { eq: "chairs.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
                 }
             }
             golf: file(relativePath: { eq: "golf.jpeg" }) {
                 childImageSharp {
                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
                 }
             }
@@ -41,7 +41,7 @@ const SliderHero = ({className}) => {
 
     const backgroundOne = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0))`, baseball.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, baseball.childImageSharp.fluid,
     ]
     const backgroundTwo = [
         `linear-gradient(
@@ -68,8 +68,7 @@ const SliderHero = ({className}) => {
                 id={`test`}
                 key={index}
                 fluid={item.image}
-                fadeIn={false}
-                // durationFadeIn="100ms"
+                // fadeIn={false}
                 backgroundColor="white"
             >
                 <div className="inner">

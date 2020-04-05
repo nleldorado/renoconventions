@@ -1,24 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TeamCard from '../components/TeamCard'
-import Image from '../images/professional.jpg'
-import Parallaxx from '../components/Parallaxx'
+import TeamParallax from '../components/TeamParallax'
 
 const Team = ({ data }) => {
     const team = data.allNodeTeamMember.nodes;
+    
 
     return (
         <Layout>
             <SEO title="Team Members" />
-            <Parallaxx 
-                  text={'Meet The Team'}
-                  image={Image}
-                  url={'/team'}
-                  height={'60vh'}
-              />
+            <TeamParallax height="60vh" />
               <div className="team">
             {
                 team.map(member => (
@@ -28,7 +22,7 @@ const Team = ({ data }) => {
                         name={member.title}
                         position={member.field_position}
                         number={member.field_phone_number}
-                        image={member.relationships.field_media_image.relationships.field_media_image.localFile.publicURL}
+                        image={member.relationships.field_media_image.relationships.field_media_image.localFile.childImageSharp.fixed}
                         alt={member.relationships.field_media_image.field_media_image.alt}
                     />
                 ))
@@ -56,7 +50,11 @@ export const data = graphql`
             relationships {
               field_media_image {
                 localFile {
-                  publicURL
+                  childImageSharp {
+                    fixed(width: 370) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
                 }
               }
             }

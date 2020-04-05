@@ -1,3 +1,48 @@
+.react-parallax {
+
+    .parallax-wrapper {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            text-decoration: none;
+        
+            h1 {
+               
+                font-size: 80px;
+                color: white;
+                text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.2);
+                font-family: $headerFont;
+                text-transform: uppercase;
+            }
+        } 
+        h1 {
+            font-size: 80px;
+            color: white;
+            text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.2);
+            font-family: $headerFont;
+            text-transform: uppercase;
+        }   
+    }
+    .parallax-custom-bg {
+        width: 100%;
+        .gatsby-image-wrapper {
+            img {
+                position: absolute !important;
+                width: 100% !important;
+                height: 100% !important;
+            }
+            div {
+                width: 105vw !important;
+                height: 100vh !important;
+                padding-bottom: 70% !important;
+            }
+        }
+    }
+}
+
 .parallax {
     height: 100vh;
     background: linear-gradient(
@@ -12,25 +57,28 @@
                 text-shadow:
                 0px -5px 16px rgba(0, 0, 0, 0.2);
                 font-family: $headerFont;
-                text-transform: uppercase; 
-   
+                text-transform: uppercase;
             }
-        }
-                
-    }
-            
+        }            
+    }         
+}
+
+@media (max-width: 1024px) {
+    .parallax-wrapper {
+        height: 80vh !important;
+    } 
 }
 
 @media (max-width: 600px) {
-    .react-parallax {
-        img {
-            max-width: none !important;
-          
+    .parallax-wrapper {
+        height: 60vh !important;
+        padding: 0 30px;
+        h1 {
+            font-size: 55px !important;
+            text-align: center;
         }
     }
     .parallax {
-        height: 60vh;
-        
         .parallax-title {
             a {
                 h1 {

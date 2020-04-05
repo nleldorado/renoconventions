@@ -1,5 +1,5 @@
 import React from 'react';
-import GalleryModal from './GalleryModal'
+import Gallery from './Gallery'
 
 const CardThree = ({title, info, info2, images}) => {
     return (
@@ -10,7 +10,7 @@ const CardThree = ({title, info, info2, images}) => {
                 <p>{info2}</p>
             </div>
             <div className="photos">
-                <GalleryModal images={images} />
+                <Gallery images={images} />
             </div>
         </div>
     );

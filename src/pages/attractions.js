@@ -1,9 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout'
-import Gallery from '../components/GalleryModal'
-import Parallaxx from '../components/Parallaxx'
+import Gallery from '../components/Gallery'
 import Collapsable from '../components/Collapsable'
 import SEO from '../components/seo'
+import AttractionsParallax from '../components/AttractionsParallax'
 
 const images = [
   {
@@ -38,17 +38,28 @@ const items = [
   {button: "Lorem ipsum", info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam. Purus gravida quis blandit turpis cursus in hac habitasse platea. Est ultricies integer quis auctor elit sed vulputate. Cursus in hac habitasse platea."}
 ]
 
-const attractions = () => {
+const Attractions = () => {
     return (
         <div>
             <Layout>
               <SEO title="Nearby Attractions" />
-              <Parallaxx 
-                  text={'Nearby Attractions'} 
-                  image={'https://images.unsplash.com/photo-1536549702260-2fe62b52b09d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'} 
-                  url={'/attractions'}
-                  height={'60vh'}
-              />
+              <AttractionsParallax height="60vh" />
+              <div className="attractions">
+              <h2>TOP ATTRACTIONS NEARBY</h2>
+              <br/>
+              <p>When not reveling in the entertainment offered right onsite in the form of gaming, nightlife and shows at great value, check out the exciting attractions nearby.
+              </p>
+              <br/>
+              <p>Reno Events Center</p>
+              <p>Reno Aces AAA Baseball Stadium</p>
+              <p>Reno Bighorns NBA Development Team</p>
+              <p>Downtown Riverwalk</p>
+              <p>National Bowling Stadium</p>
+              <p>National Automobile Museum</p>
+              <p>Nevada Art Museum</p>
+              <p>Unique Dining and Nightlife Options</p>
+              <p>Blocks from the University of Nevada</p>
+              </div>
               <Collapsable 
                   items={items}
               />
@@ -58,4 +69,4 @@ const attractions = () => {
     );
 };
 
-export default attractions;
+export default Attractions;

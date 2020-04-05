@@ -33,16 +33,9 @@ const Footer = () => {
                             <li><Link to="/#">Link 5</Link></li>
                         </ul>
                     </div>
-                    <div className="subscribe">
-                        <h3>Newsletter</h3>
-                        {/* <p>Sign up for our email newsletters and stay informed of all the latest happenings in Reno!</p>
-                         */}
-                        <form action="#">
-                            <input type="text" className="subscribe_input" placeholder="Enter Email Address" />
-                            <span className="icon"><Icon icon={'paper-plane'} /></span>
-                        </form>
-                        
-                        <ul>
+                    <div className="follow">
+                        <h3>Follow Us</h3>
+                    <ul>
                                 <li>
                                     <a href="/">
                                         <img className="social facebook" src={Facebook} alt="Facebook" />
@@ -60,6 +53,16 @@ const Footer = () => {
                                 </li>
        
                         </ul>
+                    </div>
+                    <div className="subscribe">
+                        <h3>Newsletter</h3>
+                        <p>Sign up for our email newsletters and stay 
+                            <br/>
+                           informed of all the latest happenings in Reno!</p>
+                        <form action="#">
+                            <input type="text" className="subscribe_input" placeholder="Enter Email Address" />
+                            <span className="icon"><Icon icon={'paper-plane'} /></span>
+                        </form>
                     </div>
                 </div>
             

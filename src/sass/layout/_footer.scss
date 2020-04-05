@@ -18,21 +18,13 @@ footer {
         max-width: 1440px;
         margin: auto;
         justify-content: space-around;
-        padding: 100px 0;
+        padding: 100px;
         
-        .services, .pages, .subscribe {
+        .services, .pages, .subscribe, .follow {
             h3 {
                 font-family: $headerFont;
                 text-transform: uppercase;
                 color: $mainColor;
-            }
-            h3::after {
-                content: "";
-                display: block;
-                height: 2px;
-                width: 40px;
-                background: #212121;
-                margin-top: 30px;
             }
             ul {
                 padding: 0;
@@ -45,10 +37,45 @@ footer {
                 }
             }
         }
+        .follow {
+            ul {
+                text-decoration: none;
+                margin: 0;
+                li {
+                    // border-radius: 50%;
+                    // border: 1px solid #2121215e;
+                    // width: 40px;
+                    // height: 40px;
+                    // margin: 0 10px;
+                    // .facebook {
+                    //     width: 12px;
+                    //     margin: 9px 13px;
+                    // }
+                    // .instagram {
+                    //     width: 20px;
+                    //     margin: 7px 9px;
+                    // }
+                    // .twitter {
+                    //     width: 20px;
+                    //     margin: 10px;
+                    // }
+                    margin: 10px 0;
+                    .facebook {
+                        width: 15px;
+                    }
+                    .instagram {
+                        width: 23px;
+                    }
+                    .twitter {
+                        width: 23px;
+                    }
+                }
+            }
+        }
         .subscribe {
             position: relative;
             .subscribe_input {
-                width: 500px;
+                width: 320px;
                 height: 50px;
                 border-radius: 10px;
                 border: 1px solid rgb(211, 211, 211);
@@ -56,53 +83,33 @@ footer {
                 background: white;
                 padding: 0 10px;
                 position: relative;
-                left: -4px;
+                
                 outline: none;
                 font-family: $textFont;
             }
             h3 {
                 text-align: left;
             }
+            p {
+                font-family: $textFont;
+                text-align: left;
+            }
     
             .icon {
                 position: absolute;
-                top: 79px;
-                right: 0px;
-                font-size: 33px;
-                color: white;
-                background: #212121;
+                top: 128px;
+                right: -30px;
+                font-size: 30px;
                 padding: 12px 40px;
                 border-radius: 10px;
                 button {
-                    color: white;
+                    color: $mainColor;
                     background: transparent;
                     border: none;
                     outline: none;
                 }
             }
-            ul {
-                display: flex;
-                margin: 0;
-                li {
-                    border-radius: 50%;
-                    border: 1px solid #2121215e;
-                    width: 40px;
-                    height: 40px;
-                    margin: 0 10px;
-                    .facebook {
-                        width: 12px;
-                        margin: 9px 13px;
-                    }
-                    .instagram {
-                        width: 20px;
-                        margin: 7px 9px;
-                    }
-                    .twitter {
-                        width: 20px;
-                        margin: 10px;
-                    }
-                }
-            }
+            
            
         }
     }
@@ -113,35 +120,49 @@ footer {
     footer {
         padding-bottom: 40px;
         a {
-            font-size: 14px;
+            font-size: 16px;
         }
         .footer {
             padding: 50px 0 0px;
             display: block;
             width: 80%;
             margin: auto;
-            .services, .pages, .subscribe {
+            .services, .pages, .subscribe, .follow {
                 margin-bottom: 20px;
                 h3 {
-                    font-size: 16px;
+                    font-size: 24px;
                     margin: 0;
-                    margin-bottom: 20px;
-                }
-                h3::after {
-                    display: none;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #fff;
                 }
                 ul {
+                    margin-top: 5px;
                     display: flex;
                     justify-content: space-around;
                     li {
                         margin: 0;
                         padding: 0;
                         text-align: left;
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .follow {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        margin: 0px;
                     }
                 }
             }
             .subscribe {
                 h3 {
+                    text-align: center;
+                }
+                p {
                     text-align: center;
                 }
                 .subscribe_input {
@@ -150,11 +171,11 @@ footer {
                 }
                 .icon {
                     position: absolute;
-                    top: 34px;
-                    right: -10px;
+                    top: 99px;
+                    right: -35px;
                     font-size: 22px;
-                    color: white;
-                    background: orangered;
+                    color: $mainColor;
+                    
                     padding: 10px 30px;
                     border-radius: 10px;
                     

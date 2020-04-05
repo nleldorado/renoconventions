@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
+import Img from 'gatsby-image'
 
 const TeamCard = ({name, position, number, image, alt}) => {
     return (
         <div className="team-card">
             <div className="image-wrapper">
-                <img className="member-image" src={image} alt={alt} />
+                <Img className="member-image" fixed={image} alt={alt} />
             </div>
             <div className="card-bottom">
                 <h4>{name}</h4>

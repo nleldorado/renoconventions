@@ -1,3 +1,15 @@
+.card {
+    padding: 100px 50px 0;
+    h2, h4 {
+        text-align: center;
+    }
+    .content {
+        display: flex;
+        p {
+            padding: 0 30px;
+        }
+    }
+}
 .card-one {
     padding: 100px 50px;
     display: flex;

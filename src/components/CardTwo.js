@@ -1,12 +1,12 @@
 import React from 'react';
-import GalleryModal from './GalleryModal'
+import Gallery from './Gallery'
 
 
 const CardTwo = ({title, info, info2, images}) => {
     return (
         <div className="card-two">
             <div className="photos">
-                <GalleryModal images={images} />
+                <Gallery images={images} />
             </div>
             <div className="card-info">
                 <h2>{title}</h2>

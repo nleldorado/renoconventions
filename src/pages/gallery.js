@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Parallaxx from '../components/Parallaxx'
+import GalleryParallax from '../components/GalleryParallax'
 
 const GalleryPage = ({ data }) => {
     let arr = []
@@ -23,12 +23,7 @@ const GalleryPage = ({ data }) => {
     return (
         <Layout>
             <SEO title="Gallery" />
-            <Parallaxx 
-                  text={'Gallery'}
-                  image="https://images.unsplash.com/photo-1526930795887-9ff8eb71f13f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80"
-                  url={'/gallery'}
-                  height={'60vh'}
-              />
+            <GalleryParallax height="60vh" />
 
             <div className="gallery">
                 <div className="image-gallery">

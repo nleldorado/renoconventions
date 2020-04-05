@@ -12,19 +12,35 @@
             font-family: $headerFont;
             text-transform: uppercase;
             letter-spacing: 0.15em;
+            text-align: center;
             color: $mainColor;
             
         }
-        h2::after {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 40px;
-            background: #212121;
-            margin-top: 30px;
-        }
+
         p {
             font-family: $textFont;
+            margin-bottom: 40px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            outline: none;
+            border: 2px solid $mainColor;
+            color: $mainColor;
+            font-family: $textFont;
+            padding: 10px;
+            height: 40px;
+            width: 80%;
+            margin: auto;
+            transition: 0.3s ease;
+            box-shadow: 0 20px 50px -14px rgba(0,0,0,0.4);
+        }
+        a:hover {
+            background: $mainColor;
+            color: #fff;
+            box-shadow: 0 20px 50px -14px rgba(0,0,0,0.75);
         }
     }
     .display-flex {
@@ -190,7 +206,7 @@
       .content-details a{
           text-decoration: none;
         color: #fff;
-        font-size: 0.8em;
+        font-size: 16px;
         text-transform: uppercase;
         padding: 0 8px;
         transition: 0.3s ease;
@@ -215,7 +231,6 @@
             margin: auto;
             h2 {
                 text-align: center;
-                margin: 0;
             }
             h2::after {
                 width: 0;
@@ -243,6 +258,11 @@
         padding: 70px 16px;
         .col-s-12 {
             width: 100%;
+            a {
+                margin-bottom: 50px;
+                width: 100%;
+              
+            }
         }
     }
     .resorts {

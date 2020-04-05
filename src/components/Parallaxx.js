@@ -43,7 +43,6 @@ const Parallaxx = ({text, image, url, height}) => {
                     </Fade>
                 </div>
             </div>
-            
         </Parallax>
         </div>
         
