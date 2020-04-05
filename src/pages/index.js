@@ -7,7 +7,7 @@ import ConventionsParallax from '../components/ConventionsParallax'
 import GolfParallax from '../components/GolfParallax'
 import AttractionsParallax from '../components/AttractionsParallax'
 import RestaurantsParallax from '../components/RestaurantsParallax'
-import Slick from "../components/slick"
+import Slick from "../components/Slick"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
