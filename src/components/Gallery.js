@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-const Gallery = ({images}) => {
+const GalleryModal = ({images}) => {
     const [isOpen, setOpen] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -51,4 +51,4 @@ const Gallery = ({images}) => {
     );
 };
 
-export default Gallery;
+export default GalleryModal;
