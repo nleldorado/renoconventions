@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Slider from "../components/Slider"
-import Slide from "../components/Slider"
 import AboutResorts from "../components/AboutResorts"
 import SportsParallax from '../components/SportsParallax'
 import ConventionsParallax from '../components/ConventionsParallax'
@@ -14,7 +13,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Slide />
+    <Slider />
     <AboutResorts/>
     <ConventionsParallax url="/conventions" height="100vh" />
     <SportsParallax url="/sports" height="100vh" />
