@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TeamCard from '../components/TeamCard'
 import TeamParallax from '../components/TeamParallax'
+import { graphql } from 'gatsby'
 
 const Team = ({ data }) => {
     const team = data.allNodeTeamMember.nodes;
