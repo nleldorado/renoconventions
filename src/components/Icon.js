@@ -1,10 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import PropTypes from "prop-types"
 
-const Icon = props => (
+const Icon = ({icon}) => (
     <button>
-      <FontAwesomeIcon icon={props.icon} />
+      <FontAwesomeIcon icon={icon} />
     </button>
    )
+
+FontAwesomeIcon.propTypes = {
+    icon: PropTypes.string.isRequired,
+};
 
    export default Icon;

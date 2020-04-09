@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './Gallery'
-
+import PropTypes from "prop-types"
 
 const CardTwo = ({title, info, info2, images}) => {
     return (
@@ -15,6 +15,13 @@ const CardTwo = ({title, info, info2, images}) => {
             </div>
         </div>
     );
+};
+
+CardTwo.propTypes = {
+    title: PropTypes.string,
+    info: PropTypes.string,
+    info2: PropTypes.string,
+    images: PropTypes.array,  
 };
 
 export default CardTwo;

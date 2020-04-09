@@ -2,6 +2,7 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade';
+import PropTypes from "prop-types"
 
 const insideStyles = {
     position: "absolute",
@@ -21,8 +22,8 @@ const Parallaxx = ({text, image, url, height}) => {
                 <div
                     style={{
                         position: 'absolute',
-                        background: `linear-gradient(
-                            rgba(255, 255, 255, 0), rgba(33, 33, 33, ${percentage * 1}))`,
+                        // background: `linear-gradient(
+                        //     rgba(255, 255, 255, 0), rgba(33, 33, 33, ${percentage * 1}))`,
                         left: "50%",
                         top: "50%",
                       

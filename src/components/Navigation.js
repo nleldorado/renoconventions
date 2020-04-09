@@ -24,8 +24,8 @@ const Navigation = () => {
     }
     
     let logo = {
-        width: change ? "120px" : "150px"
-
+        width: change ? "120px" : "150px",
+        padding: change ? "8px 16px" : "0"
     }
         
     let contact = {
@@ -61,7 +61,7 @@ const Navigation = () => {
                                         <Link activeClassName="active" to={link.path}>
                                             {link.name}
                                         </Link>
-                                    </li>
+                                    </li>   
                                 ))
                             }
                         </ul>

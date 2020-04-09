@@ -1,6 +1,7 @@
 import React from 'react';
 import Parallax from '../components/ParallaxScroll'
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 const AboutParallax = ({url, height}) => {
     const data = useStaticQuery(graphql`
@@ -23,6 +24,11 @@ const AboutParallax = ({url, height}) => {
             alt="About Us"
         />
     );
+};
+
+AboutParallax.propTypes = {
+    url: PropTypes.string,
+    height: PropTypes.string.isRequired,
 };
 
 export default AboutParallax;

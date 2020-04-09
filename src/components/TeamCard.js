@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import {Link} from 'gatsby'
 import Img from 'gatsby-image'
 
 const TeamCard = ({name, position, number, image, alt}) => {

@@ -1,44 +1,176 @@
-.gallery {
-    padding: 100px 50px;
-    .image-gallery {
-        text-align: center;
-      
-        button {
-            background: transparent;
-            border: none;
-            padding: 0;
-            margin: 0;
-            outline: none;
-            transition: 0.5s ease;
-                
-            img {
-                border-radius: 0px !important;
-                width: 200px;
-                height: 120px;
-                margin: 0;
+.gallery-wrapper {
+    padding: 100px;
+    text-align: center;
+    max-width: 1440px;
+    .slick-gallery {
+        .wrapper {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .main-image {
+                padding: 0 20px;
+                .slick-prev:before, .slick-next:before {
+                    font-size: 60px;
+                    text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.5);
+                    
+                }
+                .slick-prev {
+                    text-align: left;
+                    z-index: 2;
+                    left: -17px;
+                    width: 110px;
+                    top: 45vh;
+                    text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.5);
+                }
+                .slick-next {
+                    text-align: right;
+                    right: -17px;
+                    z-index: 2px;
+                    width: 110px;
+                    top: 45vh;
+                    text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.5);
+                }
+                .slick-prev:before {
+                    content: "PREV";
+                    color: $mainColor;
+                    font-size: 50px;
+                    font-family: $headerFont;
+                    text-shadow:
+                    0px -5px 16px rgba(0, 0, 0, 0.2);
+                  }
+                  
+                  .slick-next:before {
+                    content: "NEXT";
+                    color: $mainColor;
+                    font-size: 50px;
+                    font-family: $headerFont;
+                    text-shadow:
+                    0px -5px 16px rgba(0, 0, 0, 0.2);
+                  }
+                width: 100%;
+                height: 50vh;
+                overflow: hidden;
+                .image-wrapper {
+                    border: 5px solid white;
+                    width: 1000px;
+                    height: 500px;
+                    overflow: hidden;
+                    button {
+                        transition: 0.5s ease;
+                    }
+                    button:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                    img {
+                        width: 2000px !important;
+                    }
+                }
                 
             }
-        }
-        button:hover {
-            cursor: pointer;
-            opacity: 0.8;
+            .thumbnails {
+                width: 100%;
+                padding: 0 20px;
+                .slick-arrow.slick-next,
+                .slick-arrow.slick-prev {
+                    display: none !important;
+                }
+                div {
+                    margin: 0;
+                    padding: 0;
+                    
+                }
+                button {
+                    
+                    border: 5px solid #fff; 
+                    cursor: pointer;
+                    transition: 0.5s ease;
+                }
+                button:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+                img {
+                    text-align: center;
+                    height: 40vh;
+                }
+            }
         }
     }
 }
+
+    .gallery {
+        padding: 100px 50px;
+        text-align: center;
+        .slick-prev:before, .slick-next:before {
+            font-size: 50px !important;
+            color: $mainColor;
+        }
+        .image-gallery { 
+            button {
+                background: transparent;
+                border: none;
+                padding: 0;
+                margin: 0 auto;
+                outline: none;
+                transition: 0.5s ease;
+                    
+                img {
+                    border-radius: 0px !important;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+            button:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }    
 
 @media (max-width: 900px) and (min-width: 600px) {
-    .gallery {
-        padding: 50px 0;
-        .image-gallery {
-            margin-top: 100px;
-            padding: 0;
+        .gallery-wrapper {
+            padding: 50px 0;
+            .slick-gallery {
+                .main-image {
+                    height: 300px !important;
+                    .image-wrapper {
+                        height: 300px !important;
+                    }
+                }
+            }
+        }
+        .gallery {
+            padding: 50px 20px;
+            .image-gallery {
+                margin-top: 0px;
+                padding: 0;
+            }
         }
     }
-}
+
 
 @media (max-width: 600px) {
-    .gallery {
+    .gallery-wrapper {
         padding: 50px 0;
+        .slick-gallery {
+            .main-image {
+                height: 200px !important;
+                width: 100% !important;
+                .image-wrapper {
+                    height: 200px !important;
+                }
+            }
+             .thumbnails {
+                    width: 100% !important;
+                }
+        }
+
+    }
+    .gallery {
+        padding: 0px 0 0;
         .image-gallery {
             padding: 0;
             img {

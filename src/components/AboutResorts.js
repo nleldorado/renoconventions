@@ -21,13 +21,14 @@ const Resorts = () => {
             </div>
             <div className="col-6 col-s-12 display-flex">
                 <Video 
-                    id={'cZ-eR8xVBoU'} 
-                    channel={'youtube'}
+                    id='cZ-eR8xVBoU'
+                    channel='youtube'
                 />
             </div>
         </div>
         <CountIntersectionObserver/>
-        <Resort/>
+        <Resort/> 
+        
         </>
     );
 };
