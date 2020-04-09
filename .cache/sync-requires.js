@@ -12,7 +12,6 @@ exports.components = {
   "component---src-pages-attractions-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/attractions.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/contact.js"))),
   "component---src-pages-conventions-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/conventions.js"))),
-  "component---src-pages-gallery-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/gallery.js"))),
   "component---src-pages-golf-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/golf.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/index.js"))),
   "component---src-pages-restaurants-js": hot(preferDefault(require("/Users/win/reno/renoconventions/src/pages/restaurants.js"))),
