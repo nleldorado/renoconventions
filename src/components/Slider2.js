@@ -78,7 +78,7 @@ const SliderTwo = () => {
                 </Slide>
             ))
         }
-      <MenuNav />
+    {/* <MenuNav />   */}
     </HeroSlider>
   );
 };
