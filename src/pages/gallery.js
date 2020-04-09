@@ -9,28 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block",  width: 50, height: 50, zIndex: 1 }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", width: 50, height: 50, zIndex: 1 }}
-        onClick={onClick}
-      />
-    );
-  }
-
 const GalleryPage = ({ data }) => {
     let arr = []
     const images = data.allMediaImage.nodes;
@@ -54,8 +32,7 @@ const GalleryPage = ({ data }) => {
         infinite: true,
         slidesToShow: 8,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+   
         responsive: [{
             breakpoint: 600,
             settings: {
