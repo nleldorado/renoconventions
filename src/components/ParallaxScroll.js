@@ -3,14 +3,17 @@ import {Link} from 'gatsby'
 import { Parallax, Background } from 'react-parallax';
 import Fade from 'react-reveal/Fade'
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
-const ParallaxScroll = ({url, title, height, image, fixedImage, alt}) => {
+const ParallaxScroll = ({title, height, image, url, alt}) => {
     return ( 
         <Parallax strength={-200}>
             <Background className="parallax-custom-bg" >
-                <Img fixed={fixedImage} fluid={image} alt={alt} />
+                <Fade>
+                    <Img fluid={image} alt={alt} />
+                </Fade>
             </Background>
+           
             <div className="parallax-wrapper" style={{height: height}}>
                 <Fade up>
                 {url ? (
@@ -22,11 +25,16 @@ const ParallaxScroll = ({url, title, height, image, fixedImage, alt}) => {
                 )}
                 </Fade>
             </div>
-        </Parallax>
-
-   
-        
+        </Parallax>        
     );
+};
+
+ParallaxScroll.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string,
+    height: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    alt: PropTypes.string.isRequired, 
 };
 
 export default ParallaxScroll;

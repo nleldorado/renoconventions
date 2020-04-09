@@ -41,33 +41,20 @@ footer {
             ul {
                 text-decoration: none;
                 margin: 0;
+                
                 li {
-                    // border-radius: 50%;
-                    // border: 1px solid #2121215e;
-                    // width: 40px;
-                    // height: 40px;
-                    // margin: 0 10px;
-                    // .facebook {
-                    //     width: 12px;
-                    //     margin: 9px 13px;
-                    // }
-                    // .instagram {
-                    //     width: 20px;
-                    //     margin: 7px 9px;
-                    // }
-                    // .twitter {
-                    //     width: 20px;
-                    //     margin: 10px;
-                    // }
                     margin: 10px 0;
                     .facebook {
                         width: 15px;
+                        color: #222;
                     }
                     .instagram {
                         width: 23px;
+                        color: #222;
                     }
                     .twitter {
                         width: 23px;
+                        color: #222;
                     }
                 }
             }
@@ -98,12 +85,12 @@ footer {
             .icon {
                 position: absolute;
                 top: 128px;
-                right: -35px;
+                right: -28px;
                 font-size: 30px;
                 padding: 12px 40px;
                 border-radius: 10px;
                 button {
-                    color: $mainColor;
+                    color: #222;
                     background: transparent;
                     border: none;
                     outline: none;
@@ -113,10 +100,16 @@ footer {
            
         }
     }
+    @media (max-width: 768px) {
+        .footer {
+            padding: 100px 20px 50px;
+       
+        }
+    }
     
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     footer {
         padding-bottom: 40px;
         a {
