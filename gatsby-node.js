@@ -6,6 +6,21 @@
 
 // You can delete this file if you're not using it
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bad-module/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+
 const path = require('path')
 
 exports.createPages = async ({ actions, graphql}) => {
@@ -37,17 +52,3 @@ exports.createPages = async ({ actions, graphql}) => {
 
 }
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-    if (stage === "build-html") {
-      actions.setWebpackConfig({
-        module: {
-          rules: [
-            {
-              test: /bad-module/,
-              use: loaders.null(),
-            },
-          ],
-        },
-      })
-    }
-  }

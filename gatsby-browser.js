@@ -12,3 +12,4 @@ export const onClientEntry = () => {
       console.log(`# IntersectionObserver is polyfilled!`)
     }
   }
+

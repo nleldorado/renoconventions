@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Slider from "../components/Slider"
-import Slider2 from "../components/Slider2"
+import Slide from "../components/Slider"
 import AboutResorts from "../components/AboutResorts"
 import SportsParallax from '../components/SportsParallax'
 import ConventionsParallax from '../components/ConventionsParallax'
@@ -11,32 +11,10 @@ import RestaurantsParallax from '../components/RestaurantsParallax'
 import Slick from "../components/Slick"
 import SEO from "../components/seo"
 
-
-
-const IndexPage = () => {
-  const [hasRan, setHasRan] = useState(false)
-  const [screenSize, setScreenSize] = useState({
-    height: 0,
-    width: 0,
-  })
-  const updateScreenSize = () => {
-    setScreenSize({ width: window.innerWidth, height: window.innerHeight })
-  }
-  useEffect(() => {
-    if (!hasRan) {
-      setHasRan(true)
-      updateScreenSize()
-    }
-    window.addEventListener("resize", updateScreenSize)
-    
-    return () => {
-      window.removeEventListener("resize", updateScreenSize)
-    }
-  }, [screenSize])
-  return (  
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Slider2 />
+    <Slide />
     <AboutResorts/>
     <ConventionsParallax url="/conventions" height="100vh" />
     <SportsParallax url="/sports" height="100vh" />
@@ -45,7 +23,6 @@ const IndexPage = () => {
     <RestaurantsParallax url="/restaurants" height="100vh" />
     <Slick/>
   </Layout>
-  )
-}
+)
 
 export default IndexPage
