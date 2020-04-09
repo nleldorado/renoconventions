@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
-import Collapsable from '../components/Collapsable'
+import Collapsible from '../components/Collapsible'
 import SEO from '../components/seo'
 import AttractionsParallax from '../components/AttractionsParallax'
-
+import Feature from '../components/Feature'
+import AttractionsList from '../components/AttractionsList'
 const images = [
   {
     src:
@@ -38,31 +39,25 @@ const items = [
   {button: "Lorem ipsum", info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam. Purus gravida quis blandit turpis cursus in hac habitasse platea. Est ultricies integer quis auctor elit sed vulputate. Cursus in hac habitasse platea."}
 ]
 
+const info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam. Purus gravida quis blandit turpis cursus in hac habitasse platea. Est ultricies integer quis auctor elit sed vulputate. Cursus in hac habitasse platea. Aliquet risus feugiat in ante metus dictum at. Ullamcorper sit amet risus nullam eget felis eget nunc. Rhoncus urna neque viverra justo. Enim nulla aliquet porttitor lacus luctus. Magna etiam tempor orci eu."
+
+
 const Attractions = () => {
     return (
         <div>
             <Layout>
               <SEO title="Nearby Attractions" />
-              <AttractionsParallax height="60vh" />
-              <div className="attractions">
-              <h2>TOP ATTRACTIONS NEARBY</h2>
-              <br/>
-              <p>When not reveling in the entertainment offered right onsite in the form of gaming, nightlife and shows at great value, check out the exciting attractions nearby.
-              </p>
-              <br/>
-              <p>Reno Events Center</p>
-              <p>Reno Aces AAA Baseball Stadium</p>
-              <p>Reno Bighorns NBA Development Team</p>
-              <p>Downtown Riverwalk</p>
-              <p>National Bowling Stadium</p>
-              <p>National Automobile Museum</p>
-              <p>Nevada Art Museum</p>
-              <p>Unique Dining and Nightlife Options</p>
-              <p>Blocks from the University of Nevada</p>
-              </div>
-              <Collapsable 
-                  items={items}
+              <AttractionsParallax height="60vh" />  
+              <Feature 
+                image="https://picsum.photos/800/800"
+                title="Featured Content"
+                content={info}
+                url="/"
               />
+              <AttractionsList />
+              {/* <Collapsible 
+                  items={items}
+              /> */}
               <Gallery images={images} />
             </Layout>
         </div>

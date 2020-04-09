@@ -28,6 +28,7 @@
     }
     .parallax-custom-bg {
         width: 100%;
+        background: #222;
         .gatsby-image-wrapper {
             img {
                 position: absolute !important;
@@ -44,6 +45,7 @@
 }
 
 .parallax {
+    background-image: radial-gradient(circle, #212121, #222222, #222222, #232323, #242424, #252525, #272727, #282828, #2a2a2a, #2d2d2d, #2f2f2f, #323232);
     height: 100vh;
     background: linear-gradient(
             rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));

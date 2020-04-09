@@ -1,6 +1,7 @@
 import React from 'react';
 import Parallax from '../components/ParallaxScroll'
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 const ConventionsParallax = ({url, height}) => {
     const data = useStaticQuery(graphql`
@@ -23,6 +24,13 @@ const ConventionsParallax = ({url, height}) => {
             alt="Conventions"
         />
     );
+};
+
+ConventionsParallax.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string,
+    height: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired, 
 };
 
 export default ConventionsParallax;

@@ -1,0 +1,109 @@
+.feature {
+    padding: 100px 100px 0;
+
+    display: flex;
+    .feature-content {
+        padding: 0px 50px 0 0;
+       
+        width: 50%;
+        // box-shadow: 0 20px 50px -14px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+            font-family: $headerFont;
+            font-size: 40px;
+            margin: 0;
+            text-align: center;
+            color: $mainColor;
+        }
+        p {
+            font-family: $textFont;
+            margin: 0;
+            color: #222;
+            font-size: 18px;
+            background: #eee;
+            padding: 40px;
+            margin: 10px 0;
+            box-shadow: 0 20px 50px -14px rgba(134, 134, 134, 0.2);
+        }
+        a {
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s;
+            text-decoration: none;
+            color: $mainColor;
+            font-family: $textFont;
+        }
+        a:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;  
+            right: 0px;
+            transition: 0.5s;
+            color: $mainColor;
+            
+          }
+          
+          a:hover{
+            padding-right: 24px;
+            padding-left:8px;
+          }
+          a:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+
+    }
+    .feature-img {
+        width: 50%;
+        box-shadow: 0 20px 50px -14px rgba(0,0,0,0.3);
+        overflow: hidden;
+        filter: grayscale(1);
+        height: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .feature {
+       padding: 100px 20px 0;
+       .feature-content {
+           height: 100%;
+       }
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        .feature-content {
+            width: 80%;
+            padding: 40px;
+            z-index: 1;
+        }
+        .feature-img {
+            width: 80%;
+            height: 300px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0; 
+            background: #fff;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+        padding: 50px 20px;
+        .feature-content {
+            width: 100%;
+            padding: 20px;
+        }
+        .feature-img {
+            width: 100%;
+            overflow: visible;
+        }
+    }
+}

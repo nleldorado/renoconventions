@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import PropTypes from "prop-types"
 
 const GalleryModal = ({images}) => {
     const [isOpen, setOpen] = useState(false);
@@ -49,6 +50,10 @@ const GalleryModal = ({images}) => {
         </div>
       </div>
     );
+};
+
+GalleryModal.propTypes = {
+  images: PropTypes.array,
 };
 
 export default GalleryModal;

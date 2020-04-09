@@ -17,11 +17,11 @@
     max-width: 1440px;
     margin: auto;
     .card-info {
-        width: 60%;
+        width: 50%;
         padding: 30px;
     }
     .photos {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -33,11 +33,11 @@
     background: rgb(247, 247, 247);
     margin: auto;
     .card-info {
-        width: 60%;
+        width: 50%;
         padding: 30px;
     }
     .photos {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .card-one {
         flex-direction: column;
         padding: 50px 20px;
@@ -94,6 +94,16 @@
             padding: 30px 30px 0px;
         }
         .photos {
+            width: 100%;
+        }
+    }
+    .card-three {
+        padding: 100px 0 0;
+    }
+    .card-four {
+        flex-direction: column;
+        padding: 100px 20px;
+        .card-info {
             width: 100%;
         }
     }

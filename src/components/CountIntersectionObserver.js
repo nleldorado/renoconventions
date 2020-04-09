@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
+import { useStaticQuery, graphql } from "gatsby"
 
 const CountIntersectionObserver = () => {
     return (
@@ -16,7 +17,6 @@ const CountIntersectionObserver = () => {
                 <div className="count">
                 <Counter target={100} title='Meeting Space' duration={3} />
                 </div>
-     
         </div>
     );
 };

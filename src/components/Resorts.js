@@ -2,7 +2,7 @@ import React from 'react';
 import Eldorado from '../images/eldorado.svg'
 import Silver from '../images/silver_legacy.svg'
 import Circus from '../images/circus_circus.svg'
-
+import PropTypes from "prop-types"
 
 const Card = ({ image, title, bookTitle, bookUrl, websiteTitle, websiteUrl }) => (
         <div className="content">
@@ -45,6 +45,14 @@ const Resorts = () => {
             />
         </div>
     );
+};
+
+Resorts.propTypes = {
+    title: PropTypes.string,
+    bookTitle: PropTypes.string.isRequired,
+    bookUrl: PropTypes.string.isRequired,
+    websiteTitle: PropTypes.string.isRequired, 
+    websiteUrl: PropTypes.string.isRequired,
 };
 
 export default Resorts;

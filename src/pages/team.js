@@ -7,8 +7,6 @@ import TeamParallax from '../components/TeamParallax'
 
 const Team = ({ data }) => {
     const team = data.allNodeTeamMember.nodes;
-    
-
     return (
         <Layout>
             <SEO title="Team Members" />

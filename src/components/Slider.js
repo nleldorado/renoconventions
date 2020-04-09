@@ -3,8 +3,8 @@ import React from 'react'
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import Fade from 'react-reveal/Fade';
-
 import BackgroundImage from 'gatsby-background-image'
+import PropTypes from "prop-types"
 
 const SliderHero = ({className}) => {
   const {
@@ -45,7 +45,7 @@ const SliderHero = ({className}) => {
     ]
     const backgroundTwo = [
         `linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))`, chairs.childImageSharp.fluid,
+            rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0))`,
     ]
     const backgroundThree = [
         `linear-gradient(
@@ -59,7 +59,9 @@ const SliderHero = ({className}) => {
     ]
 
   return (
-    <Slider autoplay={3000} className="slider-wrapper">
+    <Slider 
+        autoplay={3000} 
+        className="slider-wrapper">
      {slides.map((item, index) => (
          <div className="slider-content"
             key={index}>
@@ -83,5 +85,8 @@ const SliderHero = ({className}) => {
   )
 }
 
+SliderHero.propTypes = {
+    className: PropTypes.string,
+};
 
 export default SliderHero

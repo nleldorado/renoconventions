@@ -1,12 +1,13 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import PropTypes from "prop-types"
 
 const Counter = ({target, title, duration}) => {
     const [ref, inView] = useInView({
 		threshold: 1,
 		triggerOnce: true,
-	});
+    });
     return (
                 <div className="counter-inner" ref={ref}>
                        <h4 className={`animation delay ${
@@ -29,6 +30,12 @@ const Counter = ({target, title, duration}) => {
                      
        
     );
+};
+
+Counter.propTypes = {
+    target: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    duration: PropTypes.number.isRequired,
 };
 
 export default Counter;

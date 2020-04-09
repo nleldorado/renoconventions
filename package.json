@@ -22,6 +22,7 @@
     "gatsby-source-drupal": "^3.4.2",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
+    "hero-slider": "^2.0.3",
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
@@ -36,10 +37,13 @@
     "react-intersection-observer": "^8.26.1",
     "react-modal-video": "^1.2.3",
     "react-parallax": "^3.0.3",
+    "react-photo-gallery": "^8.0.0",
+    "react-photo-gallery-2": "^8.0.8",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.25.2",
     "react-use-scroll-position": "^2.0.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
