@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // JSX
-import HeroSlider, { Slide, MenuNav, OverlayContainer } from "hero-slider";
+import HeroSlider, { Slide, MenuNav } from "hero-slider";
 import Sports from '../images/baseball.jpeg'
 import Golf from '../images/golf.jpeg'
 import Chairs from '../images/chairs.jpeg'
@@ -35,8 +35,6 @@ const Screen = () => {
     )
 }
 const SliderTwo = () => {
-
-    
   return (
     <HeroSlider
         slidingAnimation="top_to_bottom"
@@ -88,9 +86,7 @@ const SliderTwo = () => {
             ))
         }
         
-            <Screen /> 
-    
-         
+        <Screen /> 
     </HeroSlider>
   );
 };

@@ -1,0 +1,73 @@
+
+.sc-fzoLsD {
+  max-width: 1440px;
+}
+.slider-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: 80px;
+        font-family: $headerFont;
+        color: #fff;
+        text-shadow:
+              0px -5px 16px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+    }
+    p {
+      font-size: 28px;
+      color: #fff;
+      font-family: $headerFont;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-shadow:
+              0px -5px 16px rgba(0, 0, 0, 0.2);
+  }
+  a { 
+      background: $mainColor;
+      padding: 6px 24px;
+      text-decoration: none;
+                  color: white;
+                  font-family: $textFont;
+                  //font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                  text-transform: uppercase; // font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.2s ease;
+                  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+                  position: relative;
+                  top: 20px;
+                  box-shadow: 0 20px 50px -14px rgba(0,0,0,0.3);
+  }
+  a:hover {
+      box-shadow: 0 20px 50px -14px rgba(0,0,0,0.75);
+      background: rgba(255, 68, 0, 0.8) !important;
+    }
+}
+
+.slide-menu-nav-button-number {
+  font-size: 16px !important;
+  font-family: $textFont !important;
+}
+
+.slide-menu-nav-button-text {
+    padding-left: 0 !important;;
+    text-align: center;
+    font-size: 17px !important;
+    font-family: $textFont !important;;
+    text-transform: uppercase !important;;
+}
+
+@media (max-width: 600px) {
+  .slider-text {
+    padding: 0 30px;
+    text-align: center;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 24px;
+      
+    }
+  }
+}
