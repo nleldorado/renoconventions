@@ -87,13 +87,27 @@
 
 .slide-menu-nav-button-number {
     font-size: 16px !important;
-    font-family: $textFont;
+    font-family: $textFont !important;
 }
 
   .kgWozd .slide-menu-nav-button-text {
-      padding-left: 0;
+      padding-left: 0 !important;;
       text-align: center;
       font-size: 17px !important;
-      font-family: $textFont;
-      text-transform: uppercase;
+      font-family: $textFont !important;;
+      text-transform: uppercase !important;;
+  }
+
+  @media (max-width: 600px) {
+    .slider-text {
+      padding: 0 30px;
+      text-align: center;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 24px;
+        
+      }
+    }
   }
