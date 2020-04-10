@@ -26,7 +26,15 @@ const images = [
         link: "/",}
 ]
 
+const Screen = () => {
+    if (typeof window === 'undefined') 
+        return <span>loading...</span>
+    return (
+        <MenuNav /> 
+    )
+}
 const SliderTwo = () => {
+
     
   return (
     <HeroSlider
@@ -78,7 +86,10 @@ const SliderTwo = () => {
                 </Slide>
             ))
         }
-    {/* <MenuNav />   */}
+        
+            <Screen /> 
+    
+         
     </HeroSlider>
   );
 };
