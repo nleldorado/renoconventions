@@ -79,10 +79,12 @@
         align-items: center;
         flex-direction: column-reverse;
         justify-content: center;
+       
         .feature-content {
             width: 80%;
             padding: 40px;
             z-index: 1;
+            background: #eee;
         }
         .feature-img {
             width: 80%;
