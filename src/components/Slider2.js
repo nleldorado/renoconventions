@@ -28,7 +28,8 @@ const images = [
 
 const Screen = () => {
     if (typeof window === 'undefined') 
-        return <span>loading...</span>
+        return <></>
+
     return (
         <MenuNav /> 
     )
