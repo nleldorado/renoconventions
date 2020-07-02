@@ -80,7 +80,15 @@ const GalleryPage = ({ data }) => {
                     <TabList>
                         <Tab>All</Tab>
                         |
-                        <Tab>Recipes</Tab>
+                        <Tab>Conventions</Tab>
+                        |
+                        <Tab>Sports</Tab>
+                        |
+                        <Tab>Golf</Tab>
+                        |
+                        <Tab>Attractions</Tab>
+                        |
+                        <Tab>Restaurants</Tab>
                         |
                         <Tab>Team Members</Tab>
                     </TabList>
