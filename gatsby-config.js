@@ -5,6 +5,7 @@ module.exports = {
     author: `Nguyen Le`,
   },
   plugins: [
+    `hero-slider`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -23,7 +24,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // need authentication
     // {
     //   resolve: `gatsby-source-drupal`,
     //   options: {
@@ -31,8 +31,6 @@ module.exports = {
     //     apiBase: `jsonapi`,
     //   },
     // },
-    // can use more than one drupal source to query data into gatsby
-    //dev-renoconventions drupal demo site with content already created which is used to test graphql with gatsby
     {
       resolve: `gatsby-source-drupal`,
       options: {

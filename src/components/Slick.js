@@ -50,9 +50,6 @@ const Slick = () => {
         speed: 3000,
         autoplaySpeed: 3000,
         cssEase: "linear",
-        // pauseOnHover: true,
-        // nextArrow: <SampleNextArrow />,
-        // prevArrow: <SamplePrevArrow />
         responsive: [{
             breakpoint: 600,
             settings: {
@@ -66,25 +63,24 @@ const Slick = () => {
             }
           }]
       };
-    
     return (
         <div className="slick">
             <div className="container">
                 <h1>Over 17 restaurants to choose from.</h1>
-            <Slider {...settings}>
-                {
-                    restaurants.map((restaurant, index) => (
-                        <div key={index}>
-                            {/* <h3>
+                <Slider {...settings}>
+                    {
+                        restaurants.map((restaurant, index) => (
+                            <div key={index}>
+                                {/* <h3>
                                 {restaurant[0]}
                             </h3> */}
-                            <img src={restaurant[1]} alt="restaurant" />
-                        </div>
-                    ))
-                }
-            </Slider>
+                                <img src={restaurant[1]} alt="restaurant" />
+                            </div>
+                        ))
+                    }
+                </Slider>
+            </div>
         </div>
-    </div>
     );
 };
 

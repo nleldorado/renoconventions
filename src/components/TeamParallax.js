@@ -17,11 +17,11 @@ const TeamParallax = ({url, height}) => {
     `)
     return (
         <Parallax
-                title="Meet The Team"
-                url={url}
-                height={height}
-                image={data.data.childImageSharp.fluid}
-                alt="Meet the team"
+            title="Meet The Team"
+            url={url}
+            height={height}
+            image={data.data.childImageSharp.fluid}
+            alt="Meet the team"
         />
     );
 };

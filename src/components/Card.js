@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from "prop-types"
 
-const Card = ({title, subTitle, info, info2}) => {
+const Card = ({title, subtitle, info, info2}) => {
     return (
         <div className="card">
             <h2>{title}</h2> 
-            <h4>{subTitle}</h4>
+            <h4>{subtitle}</h4>
             <div className="content">
                 <p>{info}</p>
                 <p>{info2}</p>
@@ -16,7 +16,7 @@ const Card = ({title, subTitle, info, info2}) => {
 
 Card.propTypes = {
     title: PropTypes.string,
-    subTitle: PropTypes.string,
+    subtitle: PropTypes.string,
     info: PropTypes.string,
     info2: PropTypes.string,
 };

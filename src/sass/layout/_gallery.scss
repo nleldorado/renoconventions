@@ -2,6 +2,24 @@
     padding: 100px;
     text-align: center;
     max-width: 1440px;
+    .react-tabs__tab-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        .react-tabs__tab {
+            outline: none;
+            margin: 0 20px;
+            font-family: $headerFont;
+            cursor: pointer;
+        }
+        .react-tabs__tab:hover {
+            color: rgb(83, 83, 83);
+        }
+    }
+    .react-tabs__tab-panel--selected { 
+        animation-name: fadeIn; animation-duration: 300ms; animation-timing-function: linear; }
+
+    @keyframes fadeIn { from { opacity: 0.5; } to { opacity: 1; } }
     .slick-gallery {
         .wrapper {
             text-align: center;

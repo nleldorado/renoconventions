@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState } from "react";
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -8,31 +8,58 @@ import GalleryParallax from '../components/GalleryParallax'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const GalleryPage = ({ data }) => {
     let arr = []
-    const images = data.allMediaImage.nodes;
+    let recipes = []
+    let members = []
+    let allImages = [arr, recipes, members]
+
+    const images = data.allMediaImage.nodes
+    const recipeImages = data.allNodeRecipe.nodes
+    const memberImages = data.allNodeTeamMember.nodes
 
     images.forEach(image => {
         arr.push({
             "src": image.relationships.field_media_image.localFile.publicURL,
-            "alt": image.name
+            "alt": image.name,
+        })
+    })
+    recipeImages.forEach(recipe => {
+        recipes.push({
+            "src": recipe.relationships.field_media_image.relationships.field_media_image.localFile.publicURL,
+            "width" : 100,
+            "height" : 80,
+            "alt": recipe.name
+        })
+    })
+    memberImages.forEach(member => {
+        members.push({
+            "src": member.relationships.field_media_image.relationships.field_media_image.localFile.publicURL,
+            "width" : 100,
+            "height" : 80,
+            "alt": member.name
         })
     })
 
     const [isOpen, setOpen] = useState(false);
+
     const [selectedIndex, setSelectedIndex] = useState(0);
+
 
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
-    const slider1 = useRef();
-    const slider2 = useRef();
+    // second slide
+  
+
 
     const settings = {
-        infinite: true,
-        slidesToShow: 8,
-        slidesToScroll: 1,
-   
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
         responsive: [{
             breakpoint: 600,
             settings: {
@@ -49,6 +76,18 @@ const GalleryPage = ({ data }) => {
             <GalleryParallax height="60vh" />
             <div className="container">
             <div className="gallery-wrapper">
+                <Tabs>
+                    <TabList>
+                        <Tab>All</Tab>
+                        |
+                        <Tab>Recipes</Tab>
+                        |
+                        <Tab>Team Members</Tab>
+                    </TabList>
+                {
+                    allImages.map(arr => {
+                        return (
+                        <TabPanel>
                 <div className="slick-gallery">
                     <div className="image-gallery">
                         <ModalGateway>
@@ -130,7 +169,11 @@ const GalleryPage = ({ data }) => {
                         </div>
                     </div>
                 </div>
-     
+                </TabPanel>
+                        )
+                    })
+                }
+                </Tabs>
             </div>
             </div>
 
@@ -155,6 +198,36 @@ export const query = graphql`
           }
         }
       }
+    }
+    allNodeRecipe {
+        nodes {
+          relationships {
+            field_media_image {
+              relationships {
+                field_media_image {
+                  localFile {
+                    publicURL
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    allNodeTeamMember {
+        nodes {
+          relationships {
+            field_media_image {
+              relationships {
+                field_media_image {
+                  localFile {
+                    publicURL
+                  }
+                }
+              }
+            }
+          }
+        }
     }
   }
 `

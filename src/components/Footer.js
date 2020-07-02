@@ -10,9 +10,7 @@ const Footer = () => {
     return (
         <div>
             <footer>
-          
                 <div className="footer">
-               
                     <div className="services">
                         <h3>Services</h3>
                         <ul>
@@ -35,38 +33,38 @@ const Footer = () => {
                     </div>
                     <div className="follow">
                         <h3>Follow Us</h3>
-                    <ul>
-                                <li>
-                                    <a href="/">
-                                        <img className="social facebook" src={Facebook} alt="Facebook" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        <img className="social instagram" src={Instagram} alt="Instagram" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        <img className="social twitter" src={Twitter} alt="Instagram" />
-                                    </a>
-                                </li>
-       
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <img className="social facebook" src={Facebook} alt="Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <img className="social instagram" src={Instagram} alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <img className="social twitter" src={Twitter} alt="Instagram" />
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
                     <div className="subscribe">
                         <h3>Newsletter</h3>
-                        <p>Sign up for our email newsletters and stay 
-                            <br/>
-                           informed of all the latest happenings in Reno!</p>
+                        <p>Sign up for our email newsletters and stay
+                            <br />
+                            informed of all the latest happenings in Reno!</p>
                         <form action="#">
                             <input type="text" className="subscribe_input" placeholder="Enter Email Address" />
                             <span className="icon"><Icon icon={'paper-plane'} /></span>
                         </form>
                     </div>
                 </div>
-            
-                © {new Date().getFullYear()}, 
+
+                © {new Date().getFullYear()},
                 {` `}
                 <Link to="/">Reno Conventions. All Rights Reserved</Link>
             </footer>

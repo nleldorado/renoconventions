@@ -8,24 +8,24 @@ const GalleryModal = ({images}) => {
 
     return (
       <div className="gallery">
-      <div className="image-gallery">
-        <ModalGateway>
-          {isOpen ? (
-            <Modal
-              onClose={() => {
-                setOpen(!isOpen);
-              }}
-            >
-              <Carousel
-                views={images}
-                currentIndex={selectedIndex}
-                showImageCount={false}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
-        <div>
-          {images.map(({ src }, index) => (
+        <div className="image-gallery">
+          <ModalGateway>
+            {isOpen ? (
+              <Modal
+                onClose={() => {
+                  setOpen(!isOpen);
+                }}
+              >
+                <Carousel
+                  views={images}
+                  currentIndex={selectedIndex}
+                  showImageCount={false}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
+          <div>
+            {images.map(({ src }, index) => (
               <button
                 onClick={() => {
                   setSelectedIndex(index);
@@ -34,19 +34,19 @@ const GalleryModal = ({images}) => {
                 key={index}
               >
 
-            <img
-              src={src}
-              alt={index}
-              key={index}
-              style={{
-                padding: "0 4px",
-                objectFit: "cover",
-                objectPosition: "center"
-              }}
-            />
-            </button>
-          ))}
-        </div>
+                <img
+                  src={src}
+                  alt={index}
+                  key={index}
+                  style={{
+                    padding: "0 4px",
+                    objectFit: "cover",
+                    objectPosition: "center"
+                  }}
+                />
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     );

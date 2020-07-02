@@ -41,6 +41,7 @@
     "react-photo-gallery-2": "^8.0.8",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.25.2",
+    "react-tabs": "^3.1.1",
     "react-use-scroll-position": "^2.0.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.0"

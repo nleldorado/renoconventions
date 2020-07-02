@@ -13,16 +13,16 @@ const ParallaxScroll = ({title, height, image, url, alt}) => {
                     <Img fluid={image} alt={alt} />
                 </Fade>
             </Background>
-           
-            <div className="parallax-wrapper" style={{height: height}}>
+
+            <div className="parallax-wrapper" style={{ height: height }}>
                 <Fade up>
-                {url ? (
-                    <Link to={url}>
-                        <h1>{title}</h1>
-                    </Link> 
-                ) : (
-                    <h1>{title}</h1>
-                )}
+                    {url ? (
+                        <Link to={url}>
+                            <h1>{title}</h1>
+                        </Link>
+                    ) : (
+                            <h1>{title}</h1>
+                        )}
                 </Fade>
             </div>
         </Parallax>        

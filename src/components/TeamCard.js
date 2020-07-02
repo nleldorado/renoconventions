@@ -10,8 +10,8 @@ const TeamCard = ({name, position, number, image, alt}) => {
             </div>
             <div className="card-bottom">
                 <h4>{name}</h4>
-            <p>{position}</p>
-            <p>{number}</p>
+                <p>{position}</p>
+                <p>{number}</p>
             </div>
         </div>
     );

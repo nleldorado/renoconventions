@@ -17,11 +17,11 @@ const GalleryParallax= ({url, height}) => {
     `)
     return (
         <Parallax
-                title="Gallery"
-                url={url}
-                height={height}
-                image={data.data.childImageSharp.fluid}
-                alt="Gallery"
+            title="Gallery"
+            url={url}
+            height={height}
+            image={data.data.childImageSharp.fluid}
+            alt="Gallery"
         />
     );
 };

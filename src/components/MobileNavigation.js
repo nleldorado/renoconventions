@@ -44,16 +44,16 @@ const MobileNavigation = () => {
         <div style={style} className="mobile-navigation">
             <Menu>
                 {
-                    links.map((link, index)=> (
-                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path} key={index}>
+                    links.map((link, index) => (
+                        <Link activeStyle={{ color: "orangered" }} className="menu-item" to={link.path} key={index}>
                             {link.name}
                         </Link>
                     ))
                 }
                 <p>Connect with us</p>
                 {
-                    socialLinks.map((link, index)=> (
-                        <Link activeStyle={{ color: "orangered" }}  className="menu-item" to={link.path} target="_blank" key={index}>
+                    socialLinks.map((link, index) => (
+                        <Link activeStyle={{ color: "orangered" }} className="menu-item" to={link.path} target="_blank" key={index}>
                             {link.name}
                         </Link>
                     ))

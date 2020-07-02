@@ -45,37 +45,35 @@ const Navigation = () => {
     ]
 
     return (
-     
-            <div className="navigation" style={style}>
-                <div className="container">
-                    <div className="logo" style={logo}>
-                        <Link to="/">
-                            <Image/>
-                        </Link>
-                    </div>
-                    <div className="nav-links">
-                        <ul>
-                            {
-                                links.map((link, index) => (
-                                    <li key={index}>
-                                        <Link activeClassName="active" to={link.path}>
-                                            {link.name}
-                                        </Link>
-                                    </li>   
-                                ))
-                            }
-                        </ul>
-                    </div>
-                    <div className="contact-link" style={contact}>
-                        <ul>
-                            <li>
-                                <Link activeClassName="active" to='/contact'>Contact Us</Link>
-                            </li>
-                        </ul>
-                    </div>
+        <div className="navigation" style={style}>
+            <div className="container">
+                <div className="logo" style={logo}>
+                    <Link to="/">
+                        <Image />
+                    </Link>
+                </div>
+                <div className="nav-links">
+                    <ul>
+                        {
+                            links.map((link, index) => (
+                                <li key={index}>
+                                    <Link activeClassName="active" to={link.path}>
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+                <div className="contact-link" style={contact}>
+                    <ul>
+                        <li>
+                            <Link activeClassName="active" to='/contact'>Contact Us</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
-     
+        </div>
     );
 };
 
