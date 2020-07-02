@@ -19,9 +19,11 @@
     }
     .react-tabs__tab-panel--selected { 
         animation-name: fadeIn; animation-duration: 300ms; animation-timing-function: linear; }
-
+    
     @keyframes fadeIn { from { opacity: 0.5; } to { opacity: 1; } }
+    
     .slick-gallery {
+        
         .wrapper {
             text-align: center;
             display: flex;
@@ -37,39 +39,44 @@
                 }
                 .slick-prev {
                     text-align: left;
-                    z-index: 2;
-                    left: -17px;
-                    width: 110px;
-                    top: 45vh;
+                    z-index: 9999;
+                    left: -24px;
+                    width: 130px;
+                    height: 55px;
+                    top: 33vh;
                     text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.5);
                 }
+                
                 .slick-next {
                     text-align: right;
-                    right: -17px;
-                    z-index: 2px;
-                    width: 110px;
-                    top: 45vh;
+                    right: -24px;
+                    height: 55px;
+                    z-index: 9999px;
+                    width: 130px;
+                    top: 33vh;
                     text-shadow: 0px -5px 16px rgba(0, 0, 0, 0.5);
                 }
                 .slick-prev:before {
-                    content: "PREV";
-                    color: $mainColor;
-                    font-size: 50px;
-                    font-family: $headerFont;
+                    content: "‹";
+                    color: #222;
+                    font-size: 70px;
+                    // font-family: $headerFont;
                     text-shadow:
-                    0px -5px 16px rgba(0, 0, 0, 0.2);
+                    0px -5px 16px rgba(0, 0, 0, 0.4);
+                 
                   }
                   
                   .slick-next:before {
-                    content: "NEXT";
-                    color: $mainColor;
-                    font-size: 50px;
-                    font-family: $headerFont;
+                    content: "›";
+                    color: #222;
+                    font-size: 70px;
+                    // font-family: $headerFont;
                     text-shadow:
-                    0px -5px 16px rgba(0, 0, 0, 0.2);
+                    0px -5px 16px rgba(0, 0, 0, 0.4);
+                  
                   }
                 width: 100%;
-                height: 50vh;
+                height: 45vh;
                 overflow: hidden;
                 .image-wrapper {
                     border: 5px solid white;
@@ -88,9 +95,16 @@
                 }
                 
             }
+            .slick-dots li button:before {
+                font-size: 15px;
+                line-height: 20px;
+                    
+            }
             .thumbnails {
                 width: 100%;
                 padding: 0 20px;
+                
+                
                 .slick-arrow.slick-next,
                 .slick-arrow.slick-prev {
                     display: none !important;
@@ -106,7 +120,8 @@
                 }
                 img {
                     text-align: center;
-                    height: 30vh;
+                    height: 20vh;
+                    width: 100%;
                     filter: brightness(60%);
                     transition: 0.5s ease;
                 }
@@ -184,9 +199,7 @@
                     width: 100% !important;
                 }
         }
-        .gallery-wrapper .slick-gallery .wrapper .thumbnails button {
-            border: none !important;
-        }
+    
 
     }
     .gallery {
