@@ -4,6 +4,7 @@
     max-width: 1440px;
     .react-tabs__tab-list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         list-style-type: none;
         .react-tabs__tab {
@@ -182,6 +183,9 @@
              .thumbnails {
                     width: 100% !important;
                 }
+        }
+        .gallery-wrapper .slick-gallery .wrapper .thumbnails button {
+            border: none !important;
         }
 
     }
