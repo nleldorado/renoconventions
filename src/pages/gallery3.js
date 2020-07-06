@@ -11,6 +11,28 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "none", right: "50px", zIndex: "9999" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "none", left: "10px", zIndex: "9999" }}
+        onClick={onClick}
+      />
+    );
+  }
+
 const Gallery3 = ({ data }) => {
     let arr = []
     let recipes = []
@@ -49,12 +71,14 @@ const Gallery3 = ({ data }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const settings = {
-        className: "center",
+    className: "center",
       centerMode: true,
       infinite: true,
       centerPadding: "60px",
       slidesToShow: 3,
       speed: 500,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
         responsive: [{
             breakpoint: 600,
             settings: {
@@ -96,7 +120,7 @@ const Gallery3 = ({ data }) => {
                                 ) : null}
                             </ModalGateway>
 
-
+                        <div className="slider-wrapper-2">
                             <Slider {...settings}>
                                 {
                                     arr.map((elem, index) => (
@@ -107,6 +131,7 @@ const Gallery3 = ({ data }) => {
                                                     setOpen(true);
                                                 }}
                                                 key={index}
+                                                className="image-wrapper-2"
                                             >
                                                 <img src={elem.src} alt={elem.alt} />
                                             </button>
@@ -114,6 +139,7 @@ const Gallery3 = ({ data }) => {
                                     ))
                                 }
                             </Slider>
+                            </div>
                         </TabPanel>
                         <TabPanel>
                         <ModalGateway>
@@ -131,6 +157,7 @@ const Gallery3 = ({ data }) => {
                                     </Modal>
                                 ) : null}
                             </ModalGateway>
+                            <div className="slider-wrapper">
                             <Slider {...settings}>
                                 {
                                     recipes.map((elem, index) => (
@@ -141,6 +168,7 @@ const Gallery3 = ({ data }) => {
                                                     setOpen(true);
                                                 }}
                                                 key={index}
+                                                className="image-wrapper-2"
                                             >
                                                 <img src={elem.src} alt={elem.alt} />
                                             </button>
@@ -148,6 +176,7 @@ const Gallery3 = ({ data }) => {
                                     ))
                                 }
                             </Slider>
+                            </div>
                         </TabPanel>
                         <TabPanel>
                         <ModalGateway>
@@ -165,6 +194,7 @@ const Gallery3 = ({ data }) => {
                                     </Modal>
                                 ) : null}
                             </ModalGateway>
+                            <div className="slider-wrapper">
                             <Slider {...settings}>
                                 {
                                     members.map((elem, index) => (
@@ -175,6 +205,7 @@ const Gallery3 = ({ data }) => {
                                                     setOpen(true);
                                                 }}
                                                 key={index}
+                                                className="image-wrapper-2"
                                             >
                                                 <img src={elem.src} alt={elem.alt} />
                                             </button>
@@ -182,6 +213,7 @@ const Gallery3 = ({ data }) => {
                                     ))
                                 }
                             </Slider>
+                            </div>
                         </TabPanel>
                     </Tabs>
                 </div>

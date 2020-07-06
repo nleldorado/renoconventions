@@ -10,13 +10,13 @@ exports.components = {
   "component---src-pages-contact-js": () => import("./../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-conventions-js": () => import("./../src/pages/conventions.js" /* webpackChunkName: "component---src-pages-conventions-js" */),
   "component---src-pages-gallery-js": () => import("./../src/pages/gallery.js" /* webpackChunkName: "component---src-pages-gallery-js" */),
+  "component---src-pages-gallery-2-js": () => import("./../src/pages/gallery2.js" /* webpackChunkName: "component---src-pages-gallery-2-js" */),
+  "component---src-pages-gallery-3-js": () => import("./../src/pages/gallery3.js" /* webpackChunkName: "component---src-pages-gallery-3-js" */),
   "component---src-pages-golf-js": () => import("./../src/pages/golf.js" /* webpackChunkName: "component---src-pages-golf-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-photogallery-js": () => import("./../src/pages/photogallery.js" /* webpackChunkName: "component---src-pages-photogallery-js" */),
   "component---src-pages-restaurants-js": () => import("./../src/pages/restaurants.js" /* webpackChunkName: "component---src-pages-restaurants-js" */),
   "component---src-pages-sports-js": () => import("./../src/pages/sports.js" /* webpackChunkName: "component---src-pages-sports-js" */),
-  "component---src-pages-team-js": () => import("./../src/pages/team.js" /* webpackChunkName: "component---src-pages-team-js" */),
-  "component---src-pages-gallery-2-js": () => import("./../src/pages/gallery2.js" /* webpackChunkName: "component---src-pages-gallery-2-js" */),
-  "component---src-pages-gallery-3-js": () => import("./../src/pages/gallery3.js" /* webpackChunkName: "component---src-pages-gallery-3-js" */)
+  "component---src-pages-team-js": () => import("./../src/pages/team.js" /* webpackChunkName: "component---src-pages-team-js" */)
 }
 
