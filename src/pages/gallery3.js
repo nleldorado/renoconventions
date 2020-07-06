@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "none", right: "50px", zIndex: "9999" }}
+        style={{ ...style, display: "block", background: "none",  zIndex: "9999" }}
         onClick={onClick}
       />
     );
@@ -27,7 +27,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "none", left: "10px", zIndex: "9999" }}
+        style={{ ...style, display: "block", background: "none", left: "-67px", zIndex: "9999" }}
         onClick={onClick}
       />
     );
@@ -157,7 +157,7 @@ const Gallery3 = ({ data }) => {
                                     </Modal>
                                 ) : null}
                             </ModalGateway>
-                            <div className="slider-wrapper">
+                            <div className="slider-wrapper-2">
                             <Slider {...settings}>
                                 {
                                     recipes.map((elem, index) => (
@@ -194,7 +194,7 @@ const Gallery3 = ({ data }) => {
                                     </Modal>
                                 ) : null}
                             </ModalGateway>
-                            <div className="slider-wrapper">
+                            <div className="slider-wrapper-2">
                             <Slider {...settings}>
                                 {
                                     members.map((elem, index) => (
