@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "none",  zIndex: "9999" }}
+        style={{ ...style, display: "block", background: "none"}}
         onClick={onClick}
       />
     );
@@ -27,7 +27,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "none", left: "-67px", zIndex: "9999" }}
+        style={{ ...style, display: "block", background: "none", left: "-67px" }}
         onClick={onClick}
       />
     );
