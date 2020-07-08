@@ -29,6 +29,10 @@ module.exports = {
       options: {
         baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
         apiBase: `jsonapi`,
+        basicAuth: {
+          username: process.env.BASIC_AUTH_USERNAME,
+          password: process.env.BASIC_AUTH_PASSWORD,
+        },
       },
     },
     {
