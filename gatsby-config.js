@@ -27,21 +27,17 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
+        baseUrl: `https://dev-renoconventions.pantheonsite.io/`,
         // apiBase: `api`,
       },
     },
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `https://dev-renoconventions.pantheonsite.io/`,
+        baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
         // apiBase: `api`,
-        // basicAuth: {
-        //   username: process.env.BASIC_AUTH_USERNAME,
-        //   password: process.env.BASIC_AUTH_PASSWORD,
-        // },
-        },
       },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
