@@ -44,7 +44,7 @@ let restaurants = [
 const Slick = () => {
     const settings = {
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         speed: 3000,
