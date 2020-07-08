@@ -24,13 +24,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-source-drupal`,
-    //   options: {
-    //     baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
-    //     apiBase: `jsonapi`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `http://ec2-34-217-206-28.us-west-2.compute.amazonaws.com/`,
+        apiBase: `jsonapi`,
+      },
+    },
     {
       resolve: `gatsby-source-drupal`,
       options: {

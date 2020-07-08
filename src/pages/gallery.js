@@ -19,12 +19,13 @@ const GalleryPage = ({ data }) => {
     const images = data.allMediaImage.nodes
     const recipeImages = data.allNodeRecipe.nodes
     const memberImages = data.allNodeTeamMember.nodes
+    const galleryImages = data.allNodeGallery.nodes
 
-    images.forEach(image => {
+    galleryImages.forEach(image => {
         arr.push({
-            "src": image.relationships.field_media_image.localFile.publicURL,
-            "alt": image.name,
-            "caption": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "src": image.relationships.field_gallery_image.localFile.publicURL,
+            "alt": image.field_gallery_image.alt,
+            "caption": image.field_gallery_description.value
         })
     })
     recipeImages.forEach(recipe => {
@@ -197,6 +198,23 @@ GalleryPage.propTypes = {
 
 export const query = graphql`
   {
+    allNodeGallery {
+        nodes {
+          field_gallery_image {
+            alt
+          }
+          field_gallery_description {
+            value
+          }
+          relationships {
+            field_gallery_image {
+              localFile {
+                publicURL
+              }
+            }
+          }
+        }
+    }
     allMediaImage {
       nodes {
         name
