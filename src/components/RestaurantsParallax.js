@@ -3,10 +3,10 @@ import Parallax from '../components/ParallaxScroll'
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
-const RestaurantsParallax = ({url, height}) => {
+const RestaurantsParallax = ({url, height, imgHeight}) => {
     const data = useStaticQuery(graphql`
         query {
-            data: file(relativePath: { eq: "food.jpeg" }) {
+            data: file(relativePath: { eq: "sprinkle.jpg" }) {
                 childImageSharp {
                     fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
@@ -20,6 +20,7 @@ const RestaurantsParallax = ({url, height}) => {
             title={"Restaurants"}
             url={url}
             height={height}
+            imgHeight={imgHeight}
             image={data.data.childImageSharp.fluid}
             alt={'Restaurants'}
         />

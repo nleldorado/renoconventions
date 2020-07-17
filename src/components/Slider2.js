@@ -1,28 +1,28 @@
 import React from "react";
 // JSX
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
-import Sports from '../images/baseball.jpeg'
-import Golf from '../images/golf.jpeg'
-import Chairs from '../images/chairs.jpeg'
+import Row from '../images/therow.jpg'
+import Golf from '../images//resized/golf.jpg'
+import Ballroom from '../images/resized/ballroom.jpg'
 import Fade from 'react-reveal/Fade'
 import { Link } from "gatsby"
 
 const images = [
     {
-        image: Sports, 
+        image: Row, 
         title: "Reno Conventions",
-        subtitle: "Eldorado / Circus Circus / Silver Legacy",
+        subtitle: "Eldorado / Silver Legacy / Circus Circus",
         link: "/conventions",
     },
     {   
         image: Golf, 
-        title: "Slide Two",
+        title: "Golf Venues",
         subtitle: "Description of Slide 2",
-        link: "/",},
+        link: "/golf",},
     {        
-        image: Chairs, 
-        title: "Slide Three",
-        subtitle: "Description of Slide 2",
+        image: Ballroom, 
+        title: "Meeting Space",
+        subtitle: "Description of Slide 3",
         link: "/",}
 ]
 

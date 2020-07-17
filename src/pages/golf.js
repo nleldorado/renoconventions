@@ -42,7 +42,7 @@ const Golf = () => {
         <div>
             <Layout>
               <SEO title="Golf Courses" />
-              <GolfParallax height="60vh" />
+              <GolfParallax height="60vh" imgHeight="100vh" />
               <Feature 
                 image="https://picsum.photos/800/800"
                 title="Featured Content"

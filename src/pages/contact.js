@@ -8,7 +8,7 @@ const contact = () => {
         <div>
             <Layout>
                 <SEO title="Contact" />
-                <ContactParallax height="60vh" /> 
+                <ContactParallax height="60vh" imgHeight="100vh" /> 
             </Layout>
         </div>
     );

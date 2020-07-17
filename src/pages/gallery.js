@@ -76,7 +76,7 @@ const GalleryPage = ({ data }) => {
     return (
         <Layout>
             <SEO title="Gallery" />
-            <GalleryParallax height="60vh" />
+            <GalleryParallax height="60vh" imgHeight="100vh" />
             <div className="container">
             <div className="gallery-wrapper">
                 <Tabs>

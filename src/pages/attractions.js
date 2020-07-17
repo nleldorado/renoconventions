@@ -48,7 +48,7 @@ const Attractions = () => {
         <div>
             <Layout>
               <SEO title="Nearby Attractions" />
-              <AttractionsParallax height="60vh" />  
+              <AttractionsParallax height="60vh" imgHeight="100vh" />  
               <Feature 
                 image="https://picsum.photos/800/800"
                 title="Featured Content"

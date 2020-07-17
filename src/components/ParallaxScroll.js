@@ -5,12 +5,12 @@ import Fade from 'react-reveal/Fade'
 import Img from 'gatsby-image'
 import PropTypes from "prop-types"
 
-const ParallaxScroll = ({title, height, image, url, alt}) => {
+const ParallaxScroll = ({title, imgHeight, height, image, url, alt}) => {
     return ( 
         <Parallax strength={-200}>
             <Background className="parallax-custom-bg" >
                 <Fade>
-                    <Img fluid={image} alt={alt} />
+                    <Img fluid={image} alt={alt} style={{ height: imgHeight }} />
                 </Fade>
             </Background>
 

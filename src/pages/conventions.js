@@ -33,7 +33,7 @@ const Conventions = () => {
         <div>
             <Layout>
               <SEO title="Conventions"/>
-              <ConventionsParallax height="60vh" />
+              <ConventionsParallax height="60vh" imgHeight="100vh"/>
               <Feature 
                 image="https://picsum.photos/800/800"
                 title="Featured Content"

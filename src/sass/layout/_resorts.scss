@@ -20,6 +20,7 @@
         p {
             font-family: $textFont;
             margin-bottom: 40px;
+            padding: 0 60px;
         }
         a {
             display: flex;
@@ -52,11 +53,10 @@
         border-radius: 20px;
         box-shadow: 0 20px 50px -14px rgba(0,0,0,0.5);
         background: linear-gradient(
-            rgba(0, 0, 0, 0.5), rgba(33, 33, 33, 0.5)), url('https://www.visitrenotahoe.com/wp-content/uploads/2017/06/ELDORADOCasino.jpg') center center;
-            // background-repeat: no-repeat; 
-            // background-attachment: fixed;
-            // background-size: cover;
-            
+            rgba(0, 0, 0, 0.5), rgba(33, 33, 33, 0.5)), url('../images/social.jpg') center center;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-position: center bottom;
             button {
             background: none;
             border: none;
@@ -264,6 +264,9 @@
         padding: 70px 16px;
         .col-s-12 {
             width: 100%;
+            p {
+                padding: 0;
+            }
             a {
                 margin-bottom: 50px;
                 width: 100%;

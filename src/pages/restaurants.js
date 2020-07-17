@@ -35,7 +35,7 @@ const Restaurants = () => {
         <div>
             <Layout>
               <SEO title="Restaurants" />
-              <RestaurantsParallax height="60vh" />
+              <RestaurantsParallax height="60vh" imgHeight="100vh" />
               <Feature 
                 image="https://picsum.photos/800/800"
                 title="Featured Content"

@@ -40,7 +40,7 @@ const Sports = () => {
         <div>
             <Layout>
               <SEO title="Sports" />
-              <SportsParallax height="60vh" />
+              <SportsParallax height="60vh" imgHeight="100vh" />
               <Feature 
                 image="https://picsum.photos/800/800"
                 title="Featured Content"

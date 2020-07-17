@@ -11,7 +11,7 @@ const Team = ({ data }) => {
     return (
         <Layout>
             <SEO title="Team Members" />
-            <TeamParallax height="60vh" />
+            <TeamParallax height="60vh" imgHeight="100vh" />
               <div className="team">
             {
                 team.map(member => (
