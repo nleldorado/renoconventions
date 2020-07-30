@@ -1,8 +1,8 @@
 footer {
     text-align: center;
-    background: #eee;
+    background: #f7f7f7;
     // color: #fff;
-    padding-bottom: 100px;
+ 
     hr {
         width: 90%;
         margin: auto;
@@ -18,7 +18,7 @@ footer {
         max-width: 1440px;
         margin: auto;
         justify-content: space-around;
-        padding: 100px;
+        padding: 80px 100px;
         
         .services, .pages, .subscribe, .follow {
             h3 {
@@ -184,3 +184,107 @@ footer {
         }
     }
 }
+
+section.empire-header{font-family:'Open Sans',sans-serif;font-size:12px;letter-spacing:1px;font-weight:600;border-top:1px solid #ddd;background:white;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.06);padding:0 16px}
+section.empire-header a{height:100%;font-weight:400;font-size:11px;color:#23242b}
+section.empire-header .logo svg{width:129px}
+section.empire-header .logo svg.caesars-rewards-logo{display:none;padding:6px 0}
+section.empire-header nav{height:40px;width:100%;max-width:1440px;margin:0 auto;text-transform:uppercase;display:flex}
+section.empire-header nav .menu-toggle{display:none;z-index:102}
+section.empire-header nav .menu-toggle svg{width:14px;cursor:pointer}
+section.empire-header nav .menu-toggle svg path{fill:#23242b}
+section.empire-header nav .menu-toggle .close-icon{display:none;visibility:collapse}
+section.empire-header nav .menu-toggle:hover{cursor:pointer}
+@media only screen and (max-width:960px){section.empire-header nav .menu-toggle{display:flex;height:100%;align-items:center}
+}
+section.empire-header nav.open .menu-toggle .close-icon{display:flex;visibility:visible}
+section.empire-header nav.open .menu-toggle .hamburger-icon{display:none;visibility:collapse}
+section.empire-header nav.open .side-panel{transform:translateX(0);z-index:102}
+section.empire-header nav.open .overlay{display:block;position:fixed;top:0;right:0;bottom:0;left:0;visibility:visible;background-color:rgba(20,20,20,0.5);z-index:-1;pointer-events:none}
+section.empire-header nav .logo{width:200px;height:100%;float:left;text-align:center;z-index:102}
+section.empire-header nav .logo svg{height:100%;object-fit:contain}
+section.empire-header nav .logo.caesars-rewards-logo{padding:6px 0}
+@media only screen and (max-width:960px){section.empire-header nav .logo{float:unset;text-align:unset;display:flex;flex-direction:row;width:100%;justify-content:center}
+}
+section.empire-header nav .links{padding:0;display:flex;align-items:center}
+section.empire-header nav .links li{height:40px;margin:0 16px;display:block;float:left;opacity:.95}
+section.empire-header nav .links li a{display:block;height:40px;line-height:3.5;text-decoration:none}
+@media only screen and (max-width:960px){section.empire-header nav .links>ul.main-links{display:none;visibility:collapse}
+}
+section.empire-header nav .side-panel{position:absolute;display:flex;flex-direction:column;margin-top:40px;left:0;height:100vh;width:320px;z-index:102;background-color:#fff;list-style-type:none;transform:translateX(-100%);transition:transform 300ms cubic-bezier(0.4,0,0.2,1)}
+section.empire-header nav .side-panel .links a{font-size:14px;font-weight:600;line-height:3;height:44px;padding:0 16px}
+section.empire-header nav .side-panel .links ul{padding:0;margin:0}
+section.empire-header nav .side-panel .links li{padding:0;margin:0;width:100%;transition:background 150ms cubic-bezier(0.4,0,0.2,1)}
+section.empire-header nav .side-panel .links li:hover{cursor:pointer;transition:background 75ms cubic-bezier(0.4,0,0.2,1);background:#f1f1f6}
+@media only screen and (max-width:480px){section.empire-header nav .side-panel{width:100%}
+}
+section.empire-header.dark{border-top:1px solid #23242b;background:#23242b}
+section.empire-header.dark a{color:#fff}
+section.empire-header.dark svg use,section.empire-header.dark svg path,section.empire-header.dark nav .menu-toggle svg path{fill:#fff}
+section.empire-header.dark nav .side-panel{background:#23242b}
+section.empire-header.dark nav .side-panel .links ul{color:#fff}
+section.empire-header.dark nav .side-panel .links li:hover{background:#343840}
+section.empire-header.day-one .logo svg.caesars-rewards-logo{display:inline-flex}
+section.empire-header.day-one .logo svg.caesars-entertainment-logo{display:none}
+@media only screen and (min-width:480px){body.side-panel-open{position:fixed;width:100%;overflow-y:scroll;overflow-x:hidden}
+}
+section.empire-footer{box-sizing:border-box;background:#fff;text-align:center;padding-bottom:16px}
+section.empire-footer *{box-sizing:inherit}
+section.empire-footer p{display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0;margin-inline-end:0}
+section.empire-footer .hidden{display:none}
+section.empire-footer.full-width{margin:0 calc(0vw);width:100vw}
+section.empire-footer .container{margin-right:auto;margin-left:auto;padding-left:16px;padding-right:16px;width:100%}
+@media(min-width:768px){section.empire-footer .container{max-width:768px}
+}
+@media(min-width:960px){section.empire-footer .container{max-width:960px}
+}
+@media(min-width:1170px){section.empire-footer .container{max-width:1170px}
+}
+@media only screen and (min-width:1440px){section.empire-footer .container{max-width:1440px}
+}
+section.empire-footer .corporate-footer{padding-top:64px;padding-bottom:48px}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer{display:flex;justify-content:center;padding-top:32px;padding-bottom:16px}
+}
+section.empire-footer .corporate-footer__main{display:flex;flex-direction:column;justify-content:center}
+section.empire-footer .corporate-footer__main.big-logo{display:none}
+@media only screen and (-ms-high-contrast:active),(-ms-high-contrast:none){section.empire-footer .corporate-footer__main.combo-logo svg{width:90px}
+}
+section.empire-footer .corporate-footer__main__wrapper{display:flex}
+section.empire-footer .corporate-footer__main__logo{display:flex;align-items:center;justify-content:space-around}
+section.empire-footer .corporate-footer__main__logo svg{height:55px}
+section.empire-footer .corporate-footer__main__logo svg.large{height:106px}
+@media only screen and (-ms-high-contrast:active),(-ms-high-contrast:none){section.empire-footer .corporate-footer__main__logo svg.large{width:150px}
+}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer__main__logo svg.large{height:60px}
+}
+section.empire-footer .corporate-footer__main .logo-copy{color:#343840;font-size:12px;padding:14px;white-space:nowrap}
+section.empire-footer .corporate-footer .logos_copy_right{margin-left:32px;display:flex}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer .logos_copy_right{display:none}
+}
+section.empire-footer .corporate-footer .logos_copy_right .brand-logos{display:flex}
+section.empire-footer .corporate-footer .brand-logos__properties{display:flex;flex-wrap:wrap}
+section.empire-footer .corporate-footer .brand-logos__properties .property-link{width:150px}
+section.empire-footer .corporate-footer .brand-logos__properties .property-img{width:100%;height:61px}
+section.empire-footer .corporate-footer .brand-logos__properties .property-img svg,section.empire-footer .corporate-footer .brand-logos__properties .property-img img{height:45px;padding:4px;width:100%;max-width:91px}
+section.empire-footer .corporate-footer .brand-logos__properties .property-img svg use{fill:#141414}
+section.empire-footer .link-wrapper p{font-family:'Open Sans',sans-serif}
+section.empire-footer .link-wrapper .links{margin-bottom:16px;justify-content:center}
+section.empire-footer .link-wrapper .links a{font-size:12px;font-family:'Open Sans',sans-serif;color:#343840;line-height:18px;align-items:center;text-decoration:none;white-space:nowrap}
+@media only screen and (max-width:651px){section.empire-footer .link-wrapper .links a{white-space:initial}
+}
+section.empire-footer .link-wrapper .links a:last-child{border-right:1px solid transparent}
+section.empire-footer .link-wrapper .links a:hover{text-decoration:underline}
+section.empire-footer .link-wrapper .links .link-pipe{display:inline-block;margin:2px 4px;color:#343840;overflow-y:hidden;height:16px;vertical-align:text-top}
+section.empire-footer p.california-disclaimer{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:24px}
+section.empire-footer p.california-disclaimer a{color:#343840;text-decoration:none}
+section.empire-footer p.california-disclaimer a:hover{text-decoration:underline}
+section.empire-footer p.caesars-disclaimer{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:16px}
+section.empire-footer p.copyright{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:32px}
+section.empire-footer .caesars-link,section.empire-footer .nfl-link{display:flex;height:100%;align-items:flex-end}
+section.empire-footer .caesars-link{margin-bottom:-2px}
+section.empire-footer.dark{background:#23242b}
+section.empire-footer.dark .corporate-footer__main .logo-copy,section.empire-footer.dark .link-wrapper .links a,section.empire-footer.dark .link-wrapper .links .link-pipe,section.empire-footer.dark p.caesars-disclaimer,section.empire-footer.dark p.california-disclaimer,section.empire-footer.dark p.california-disclaimer a,section.empire-footer.dark p.copyright{color:#fff}
+section.empire-footer.dark svg:not(.nfl-svg) path,section.empire-footer.dark svg:not(.nfl-logo) polygon{fill:#fff}
+section.empire-footer.day-one .corporate-footer__main.combo-logo{display:none}
+section.empire-footer.day-one .corporate-footer__main.big-logo{display:flex}
+section.empire-footer.day-one p.links.merger-link{display:none}
