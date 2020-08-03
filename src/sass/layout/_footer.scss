@@ -228,7 +228,7 @@ section.empire-header.day-one .logo svg.caesars-rewards-logo{display:inline-flex
 section.empire-header.day-one .logo svg.caesars-entertainment-logo{display:none}
 @media only screen and (min-width:480px){body.side-panel-open{position:fixed;width:100%;overflow-y:scroll;overflow-x:hidden}
 }
-section.empire-footer{box-sizing:border-box;background:#fff;text-align:center;padding-bottom:16px}
+section.empire-footer{box-sizing:border-box;background:#fff;text-align:center}
 section.empire-footer *{box-sizing:inherit}
 section.empire-footer p{display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0;margin-inline-end:0}
 section.empire-footer .hidden{display:none}
@@ -242,40 +242,54 @@ section.empire-footer .container{margin-right:auto;margin-left:auto;padding-left
 }
 @media only screen and (min-width:1440px){section.empire-footer .container{max-width:1440px}
 }
-section.empire-footer .corporate-footer{padding-top:64px;padding-bottom:48px}
-@media only screen and (max-width:960px){section.empire-footer .corporate-footer{display:flex;justify-content:center;padding-top:32px;padding-bottom:16px}
+section.empire-footer .corporate-footer{padding-top:64px;padding-bottom:64px}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer{display:flex;justify-content:center;padding:32px 16px 24px}
 }
 section.empire-footer .corporate-footer__main{display:flex;flex-direction:column;justify-content:center}
-section.empire-footer .corporate-footer__main.big-logo{display:none}
-@media only screen and (-ms-high-contrast:active),(-ms-high-contrast:none){section.empire-footer .corporate-footer__main.combo-logo svg{width:90px}
+section.empire-footer .corporate-footer__main.combo-logo{min-width:260px;margin:0 auto}
+@media only screen and (max-width:1440px){section.empire-footer .corporate-footer__main.combo-logo{min-width:200px}
 }
+@media only screen and (-ms-high-contrast:active),(-ms-high-contrast:none){section.empire-footer .corporate-footer__main.combo-logo svg{width:90px}
+section.empire-footer .corporate-footer__main.combo-logo .caesars-link{margin-left:24px}
+}
+section.empire-footer .corporate-footer__main.big-logo{display:none}
 section.empire-footer .corporate-footer__main__wrapper{display:flex}
 section.empire-footer .corporate-footer__main__logo{display:flex;align-items:center;justify-content:space-around}
 section.empire-footer .corporate-footer__main__logo svg{height:55px}
-section.empire-footer .corporate-footer__main__logo svg.large{height:106px}
-@media only screen and (-ms-high-contrast:active),(-ms-high-contrast:none){section.empire-footer .corporate-footer__main__logo svg.large{width:150px}
+section.empire-footer .corporate-footer__main__logo svg.large{width:276px;height:178px}
+@media only screen and (max-width:1440px){section.empire-footer .corporate-footer__main__logo svg.large{width:200px}
 }
-@media only screen and (max-width:960px){section.empire-footer .corporate-footer__main__logo svg.large{height:60px}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer__main__logo svg.large{width:107px;height:60px;padding-bottom:0}
 }
 section.empire-footer .corporate-footer__main .logo-copy{color:#343840;font-size:12px;padding:14px;white-space:nowrap}
-section.empire-footer .corporate-footer .logos_copy_right{margin-left:32px;display:flex}
-@media only screen and (max-width:960px){section.empire-footer .corporate-footer .logos_copy_right{display:none}
+section.empire-footer .corporate-footer .brand-logos{display:flex;flex-wrap:wrap;margin-left:48px}
+@media only screen and (max-width:1440px){section.empire-footer .corporate-footer .brand-logos{margin-left:32px}
 }
-section.empire-footer .corporate-footer .logos_copy_right .brand-logos{display:flex}
-section.empire-footer .corporate-footer .brand-logos__properties{display:flex;flex-wrap:wrap}
-section.empire-footer .corporate-footer .brand-logos__properties .property-link{width:150px}
-section.empire-footer .corporate-footer .brand-logos__properties .property-img{width:100%;height:61px}
-section.empire-footer .corporate-footer .brand-logos__properties .property-img svg,section.empire-footer .corporate-footer .brand-logos__properties .property-img img{height:45px;padding:4px;width:100%;max-width:91px}
-section.empire-footer .corporate-footer .brand-logos__properties .property-img svg use{fill:#141414}
+@media only screen and (max-width:960px){section.empire-footer .corporate-footer .brand-logos{display:none}
+}
+section.empire-footer .corporate-footer .property-link{width:157px}
+@media only screen and (max-width:1440px){section.empire-footer .corporate-footer .property-link{width:129px}
+}
+@media only screen and (max-width:1170px){section.empire-footer .corporate-footer .property-link{width:99px}
+}
+section.empire-footer .corporate-footer .property-img{width:100%;height:61px}
+section.empire-footer .corporate-footer .property-img>div{height:100%;display:flex;justify-content:center}
+section.empire-footer .corporate-footer .property-img svg,section.empire-footer .corporate-footer .property-img img{height:100%;padding:4px;width:100%;max-width:91px}
+@media only screen and (max-width:1440px){section.empire-footer .corporate-footer .property-img svg,section.empire-footer .corporate-footer .property-img img{padding:8px}
+}
+@media only screen and (max-width:1170px){section.empire-footer .corporate-footer .property-img svg,section.empire-footer .corporate-footer .property-img img{padding:14px}
+}
+section.empire-footer .corporate-footer .property-img svg use{fill:#141414}
+section.empire-footer .link-wrapper{padding-bottom:32px}
 section.empire-footer .link-wrapper p{font-family:'Open Sans',sans-serif}
-section.empire-footer .link-wrapper .links{margin-bottom:16px;justify-content:center}
+section.empire-footer .link-wrapper .links{margin-top:0;margin-bottom:16px;justify-content:center}
 section.empire-footer .link-wrapper .links a{font-size:12px;font-family:'Open Sans',sans-serif;color:#343840;line-height:18px;align-items:center;text-decoration:none;white-space:nowrap}
 @media only screen and (max-width:651px){section.empire-footer .link-wrapper .links a{white-space:initial}
 }
 section.empire-footer .link-wrapper .links a:last-child{border-right:1px solid transparent}
 section.empire-footer .link-wrapper .links a:hover{text-decoration:underline}
 section.empire-footer .link-wrapper .links .link-pipe{display:inline-block;margin:2px 4px;color:#343840;overflow-y:hidden;height:16px;vertical-align:text-top}
-section.empire-footer p.california-disclaimer{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:24px}
+section.empire-footer p.california-disclaimer{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:16px}
 section.empire-footer p.california-disclaimer a{color:#343840;text-decoration:none}
 section.empire-footer p.california-disclaimer a:hover{text-decoration:underline}
 section.empire-footer p.caesars-disclaimer{font-size:12px;color:#343840;line-height:18px;text-align:center;margin-bottom:16px}
@@ -285,6 +299,7 @@ section.empire-footer .caesars-link{margin-bottom:-2px}
 section.empire-footer.dark{background:#23242b}
 section.empire-footer.dark .corporate-footer__main .logo-copy,section.empire-footer.dark .link-wrapper .links a,section.empire-footer.dark .link-wrapper .links .link-pipe,section.empire-footer.dark p.caesars-disclaimer,section.empire-footer.dark p.california-disclaimer,section.empire-footer.dark p.california-disclaimer a,section.empire-footer.dark p.copyright{color:#fff}
 section.empire-footer.dark svg:not(.nfl-svg) path,section.empire-footer.dark svg:not(.nfl-logo) polygon{fill:#fff}
+section.empire-footer.day-one .corporate-footer .brand-logos{margin-left:32px}
 section.empire-footer.day-one .corporate-footer__main.combo-logo{display:none}
 section.empire-footer.day-one .corporate-footer__main.big-logo{display:flex}
 section.empire-footer.day-one p.links.merger-link{display:none}
